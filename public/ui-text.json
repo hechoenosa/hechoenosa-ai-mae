@@ -41,7 +41,6 @@
    "Do it scared"
   ],
   "3": [
-   "Watch the videos",
    "Meet your mentor",
    "Check your problem",
    "5 Whys",
@@ -106,14 +105,19 @@
     "Tomar una captura",
     "¿Qué es la terminal?",
     "Archivos y carpetas",
-    "¿Qué computadora tengo?"
+    "¿Qué computadora tengo?",
+    "¿Qué es una persona (usuario)?",
+    "¿Cómo hago una entrevista?",
+    "¿Qué es un MVP?",
+    "¿Qué es un PRD?"
    ],
    "par": [
     "¿Cómo ayudo con la Semana 1?",
     "¿Cómo ayudo con la Semana 3?",
     "¿Qué es GitHub?",
     "Nuestra computadora es vieja"
-   ]
+   ],
+   "back": "← Atrás"
   },
   "en": {
    "help": "Help",
@@ -156,14 +160,19 @@
     "Take a screenshot",
     "What's the terminal?",
     "Files and folders",
-    "Which computer do I have?"
+    "Which computer do I have?",
+    "What is a persona?",
+    "How do I do an interview?",
+    "What is an MVP?",
+    "What is a PRD?"
    ],
    "par": [
     "How can I help with Week 1?",
     "How can I help with Week 3?",
     "What is GitHub?",
     "Our computer is old"
-   ]
+   ],
+   "back": "← Back"
   },
   "ru": {
    "help": "Помощь",
@@ -206,14 +215,19 @@
     "Сделать скриншот",
     "Что такое терминал?",
     "Файлы и папки",
-    "Какой у меня компьютер?"
+    "Какой у меня компьютер?",
+    "Что такое персона?",
+    "Как провести интервью?",
+    "Что такое MVP?",
+    "Что такое PRD?"
    ],
    "par": [
     "Как помочь с неделей 1?",
     "Как помочь с неделей 3?",
     "Что такое GitHub?",
     "У нас старый компьютер"
-   ]
+   ],
+   "back": "← Назад"
   },
   "fr": {
    "help": "Aide",
@@ -256,14 +270,19 @@
     "Faire une capture",
     "C'est quoi le terminal ?",
     "Fichiers et dossiers",
-    "Quel ordinateur j'ai ?"
+    "Quel ordinateur j'ai ?",
+    "C'est quoi un persona ?",
+    "Comment faire une interview ?",
+    "C'est quoi un MVP ?",
+    "C'est quoi un PRD ?"
    ],
    "par": [
     "Comment aider pour la semaine 1 ?",
     "Comment aider pour la semaine 3 ?",
     "C'est quoi GitHub ?",
     "Notre ordinateur est vieux"
-   ]
+   ],
+   "back": "← Retour"
   },
   "he": {
    "help": "עזרה",
@@ -306,14 +325,19 @@
     "לצלם מסך",
     "מה זה טרמינל?",
     "קבצים ותיקיות",
-    "איזה מחשב יש לי?"
+    "איזה מחשב יש לי?",
+    "מה זו פרסונה?",
+    "איך עושים ראיון?",
+    "מה זה MVP?",
+    "מה זה PRD?"
    ],
    "par": [
     "איך לעזור בשבוע 1?",
     "איך לעזור בשבוע 3?",
     "מה זה GitHub?",
     "המחשב שלנו ישן"
-   ]
+   ],
+   "back": "→ חזרה"
   }
  },
  "words": [

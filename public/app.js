@@ -37,8 +37,10 @@ function trace(el, rows) {
   for (const [ok, label] of rows) { const s = document.createElement("span"); s.className = ok ? "ok" : "bad"; s.textContent = (ok ? "✓ " : "✕ ") + label; d.append(s); }
   el.after(d);
 }
-function setChips(items) {
+let backFn = null;
+function setChips(items, back = backFn) {
   chips.textContent = "";
+  if (back) items = [...items, [t("back"), back]];
   for (const [label, fn, num] of items) {
     const b = document.createElement("button"); b.type = "button"; b.dir = "auto";
     if (num) { const n = document.createElement("b"); n.textContent = num; b.append(n); }
@@ -55,20 +57,30 @@ function showCtx() {
 }
 const osChips = () => [["Mac", () => pickOS("Mac")], ["Windows", () => pickOS("Windows")], [t("other"), () => pickOS("Chromebook, tablet or phone")]];
 
-function pickWeek(w) {
+function weekMenu() {
+  backFn = null;
+  setChips([[t("w1"), () => pickWeek(1)], [t("w3"), () => pickWeek(3)], [t("gen"), pickGeneral]], null);
+}
+function stepMenu(w) {
   ctx = { week: w, step: null, os: null }; showCtx();
-  bubble("me", t("w" + w)); bubble("bot", t("step"));
+  backFn = weekMenu;
   setChips(STEPS[w].map((n, i) => [n, () => pickStep(i + 1), String(i + 1)]));
+}
+function pickWeek(w) {
+  bubble("me", t("w" + w)); bubble("bot", t("step"));
+  stepMenu(w);
 }
 function pickGeneral() {
   ctx = { week: "general", step: null, os: null }; showCtx();
   bubble("me", t("gen")); bubble("bot", t("genQ"));
+  backFn = weekMenu;
   setChips(t("gen6").map((g) => [g, () => ask(g)]));
 }
 function pickStep(n) {
   ctx.step = n; showCtx();
   const k = ctx.week + "-" + n; tries[k] = (tries[k] || 0) + 1;
   bubble("me", t("stepW") + " " + n + " · " + STEPS[ctx.week][n - 1]);
+  const w = ctx.week; backFn = () => stepMenu(w);
   if ((OS_STEPS[ctx.week] || []).includes(n)) { bubble("bot", t("os")); setChips([...osChips(), [t("notSure"), osHelp]]); }
   else askWhat();
 }
@@ -81,8 +93,8 @@ function greet() {
   const st = document.createElement("strong"); st.textContent = "Hackathon + Science Fair 2026";
   const rule = document.createElement("i"); const tg = document.createElement("span"); tg.textContent = "Building the future from the heart of Costa Rica.";
   intro.append(st, rule, tg); log.append(intro);
-  if (mode === "kids") { bubble("bot", t("greetK")); setChips([[t("w1"), () => pickWeek(1)], [t("w3"), () => pickWeek(3)], [t("gen"), pickGeneral]]); }
-  else { bubble("bot", t("greetP")); setChips(t("par").map((c) => [c, () => ask(c)])); }
+  if (mode === "kids") { bubble("bot", t("greetK")); weekMenu(); }
+  else { backFn = null; bubble("bot", t("greetP")); setChips(t("par").map((c) => [c, () => ask(c)]), null); }
 }
 
 function paint() {
@@ -160,6 +172,7 @@ async function ask(q) {
     if (r.kind === "answer" && r.user) turns.push({ role: "user", content: r.user }, { role: "assistant", content: r.text });
     if (r.human || r.kind === "fallback" || r.kind === "error" || r.kind === "limit") handoff();
     if (debug) trace(out, r.checks);
+    if (mode === "kids") setChips([]);
   } catch {
     render(out, T[lang].sentD);
     handoff();

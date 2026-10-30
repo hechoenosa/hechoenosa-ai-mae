@@ -18,7 +18,7 @@ for (const l of langs) {
 for (const w of ui.words) for (const l of langs) if (!w[l]) problems.push(`ui-text.json: word "${w.term}" has no "${l}" explanation`);
 
 const kb = readdirSync("knowledge").filter((f) => f.endsWith(".md"));
-for (const p of ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]) if (!kb.some((f) => f.startsWith(p))) problems.push(`knowledge/: no file starting with ${p}`);
+for (const p of ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"]) if (!kb.some((f) => f.startsWith(p))) problems.push(`knowledge/: no file starting with ${p}`);
 for (const f of kb) if (!readFileSync("knowledge/" + f, "utf8").startsWith("# ")) problems.push(`knowledge/${f}: must start with a "# Title" line`);
 
 if (problems.length) { console.error("\n✕ Can't publish yet:\n  " + problems.join("\n  ") + "\n"); process.exit(1); }
