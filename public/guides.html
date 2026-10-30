@@ -105,9 +105,9 @@ function draw(){
   const d=D[lang];document.documentElement.lang=lang;
   const head=h=>`<header class="head"><span class="n">${h.n}</span><h1>${h.t}</h1><i></i><p>${h.s}</p></header>`;
   document.getElementById("pages").innerHTML=
-   `<div class="sheet">${head(d.p1)}<div class="grid">${card(d.problem)}${card(d.whys)}${card(d.persona)}${card(d.interview)}${card(d.strangers)}</div><p class="foot">${d.foot}</p></div>
+   `<div class="sheet">${head(d.p1)}<div class="grid">${card(d.problem)}${card(d.whys)}${card(d.persona)}${card(d.interview)}${card(d.strangers)}</div></div>
     <div class="sheet" style="margin-top:28px">${head(d.p2)}<div class="grid">${card(d.fp)}${card(d.mvp)}${card(d.prd)}</div>
-    <div class="prd">${d.parts.map(([a,b])=>`<div><span class="num">${a}</span><b>${b}</b></div>`).join("")}</div><p class="foot">${d.foot}</p></div>`;
+    <div class="prd">${d.parts.map(([a,b])=>`<div><span class="num">${a}</span><b>${b}</b></div>`).join("")}</div></div>`;
   for(const b of document.querySelectorAll(".lang button"))b.setAttribute("aria-pressed",b.dataset.l===lang);
 }
 for(const b of document.querySelectorAll(".lang button"))b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem("heo-1p",lang)}catch{};draw()};

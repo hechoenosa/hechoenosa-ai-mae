@@ -91,8 +91,8 @@ function greet() {
   log.textContent = ""; turns = []; ctx = { week: null, step: null, os: null }; showCtx(); clearShot();
   const intro = document.createElement("div"); intro.className = "intro"; intro.dir = "ltr";
   const st = document.createElement("strong"); st.textContent = "Hackathon + Science Fair 2026";
-  const rule = document.createElement("i"); const tg = document.createElement("span"); tg.textContent = "Building the future from the heart of Costa Rica.";
-  intro.append(st, rule, tg); log.append(intro);
+  const rule = document.createElement("i");
+  intro.append(st, rule); log.append(intro);
   if (mode === "kids") { bubble("bot", t("greetK")); weekMenu(); }
   else { backFn = null; bubble("bot", t("greetP")); setChips(t("par").map((c) => [c, () => ask(c)]), null); }
 }
