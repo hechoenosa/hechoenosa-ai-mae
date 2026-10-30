@@ -125,19 +125,26 @@ $("fam").onclick = () => { mode = mode === "kids" ? "parents" : "kids"; $("phone
 // Words tab
 function drawWords() {
   const q = $("ws").value.trim().toLowerCase(), list = $("wlist"); list.textContent = "";
-  for (const w of WORDS) {
-    if (q && !w.term.toLowerCase().includes(q) && !(w[lang] || "").toLowerCase().includes(q)) continue;
-    const b = document.createElement("button"); b.type = "button"; b.dir = "ltr"; b.textContent = w.term; b.setAttribute("aria-pressed", word === w.term); b.onclick = () => showWord(w.term); list.append(b);
+  for (const [group, label] of [["ideas", "wIdeas"], ["computer", "wComputer"]]) {
+    const items = WORDS.filter((w) => (w.group || "computer") === group && (!q || w.term.toLowerCase().includes(q) || (w[lang] || "").toLowerCase().includes(q) || ((w.name && w.name[lang]) || "").toLowerCase().includes(q)));
+    if (!items.length) continue;
+    const h = document.createElement("h4"); h.className = "wgroup"; h.textContent = t(label); list.append(h);
+    if (group === "ideas" && !q) { const m = document.createElement("p"); m.className = "motto"; m.textContent = t("motto"); list.append(m); }
+    const row = document.createElement("div"); row.className = "wrow";
+    for (const w of items) {
+      const b = document.createElement("button"); b.type = "button"; b.dir = "auto"; b.dataset.term = w.term; b.textContent = (w.name && w.name[lang]) || w.term; b.setAttribute("aria-pressed", word === w.term); b.onclick = () => showWord(w.term); row.append(b);
+    }
+    list.append(row);
   }
 }
 function showWord(term) {
   word = term; const w = WORDS.find((x) => x.term === term);
-  $("wcard").hidden = false; $("wterm").textContent = term; $("wdef").textContent = w[lang] || w.en;
-  for (const b of $("wlist").children) b.setAttribute("aria-pressed", b.textContent === term);
+  $("wcard").hidden = false; $("wterm").textContent = (w.name && w.name[lang]) || term; $("wdef").textContent = w[lang] || w.en;
+  for (const b of $("wlist").querySelectorAll("button")) b.setAttribute("aria-pressed", b.dataset.term === term);
 }
 $("ws").oninput = drawWords;
 $("wrand").onclick = () => { const o = WORDS.filter((x) => x.term !== word); showWord(o[Math.floor(Math.random() * o.length)].term); };
-$("wask").onclick = () => { if (!word) return; view("help"); ctx = { week: "general", step: null, os: null }; showCtx(); ask(t("askWord").replace("{word}", word)); };
+$("wask").onclick = () => { if (!word) return; view("help"); ctx = { week: "general", step: null, os: null }; showCtx(); backFn = weekMenu; ask(t("askWord").replace("{word}", $("wterm").textContent)); };
 
 // Screenshots: shrunk on the phone before sending, never stored
 function clearShot() { shot = null; $("shot").hidden = true; $("file").value = ""; }

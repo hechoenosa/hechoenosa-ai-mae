@@ -118,7 +118,10 @@
     "Nuestra computadora es vieja"
    ],
    "back": "← Atrás",
-   "guides": "Guías"
+   "guides": "Guías",
+   "wIdeas": "Grandes ideas",
+   "wComputer": "Palabras de computadora",
+   "motto": "Sin usuario, no hay problema. Sin problema, no hay producto."
   },
   "en": {
    "help": "Help",
@@ -174,7 +177,10 @@
     "Our computer is old"
    ],
    "back": "← Back",
-   "guides": "Guides"
+   "guides": "Guides",
+   "wIdeas": "Big ideas",
+   "wComputer": "Computer words",
+   "motto": "No user, no problem. No problem, no product."
   },
   "ru": {
    "help": "Помощь",
@@ -230,7 +236,10 @@
     "У нас старый компьютер"
    ],
    "back": "← Назад",
-   "guides": "Шпаргалки"
+   "guides": "Шпаргалки",
+   "wIdeas": "Главные идеи",
+   "wComputer": "Компьютерные слова",
+   "motto": "Нет пользователя — нет проблемы. Нет проблемы — нет продукта."
   },
   "fr": {
    "help": "Aide",
@@ -286,7 +295,10 @@
     "Notre ordinateur est vieux"
    ],
    "back": "← Retour",
-   "guides": "Guides"
+   "guides": "Guides",
+   "wIdeas": "Grandes idées",
+   "wComputer": "Mots d'ordinateur",
+   "motto": "Pas d'utilisateur, pas de problème. Pas de problème, pas de produit."
   },
   "he": {
    "help": "עזרה",
@@ -342,17 +354,144 @@
     "המחשב שלנו ישן"
    ],
    "back": "→ חזרה",
-   "guides": "מדריכים"
+   "guides": "מדריכים",
+   "wIdeas": "רעיונות גדולים",
+   "wComputer": "מילים של מחשב",
+   "motto": "אין משתמש, אין בעיה. אין בעיה, אין מוצר."
   }
  },
  "words": [
+  {
+   "term": "User",
+   "en": "The real person who will use what you build. Find them first.",
+   "es": "La persona real que va a usar lo que construyes. Encuéntrala primero.",
+   "ru": "Настоящий человек, который будет пользоваться тем, что ты строишь. Найди его первым.",
+   "fr": "La vraie personne qui utilisera ce que tu construis. Trouve-la d'abord.",
+   "he": "האדם האמיתי שישתמש במה שאתם בונים. מצאו אותו קודם.",
+   "group": "ideas",
+   "name": {
+    "es": "Usuario",
+    "ru": "Пользователь",
+    "fr": "Utilisateur",
+    "he": "משתמש"
+   }
+  },
+  {
+   "term": "Problem",
+   "en": "Something that makes life harder for real people. Write: \"My problem is ___.\" Example: trash on the beach.",
+   "es": "Algo que le complica la vida a gente real. Escribe: \"Mi problema es ___.\" Ejemplo: basura en la playa.",
+   "ru": "То, что усложняет жизнь настоящим людям. Напиши: «Моя проблема — ___.» Пример: мусор на пляже.",
+   "fr": "Quelque chose qui rend la vie plus difficile à de vraies personnes. Écris : « Mon problème, c'est ___. » Exemple : des déchets sur la plage.",
+   "he": "משהו שמקשה על החיים של אנשים אמיתיים. כתבו: \"הבעיה שלי היא ___.\" דוגמה: זבל על החוף.",
+   "group": "ideas",
+   "name": {
+    "es": "Problema",
+    "ru": "Проблема",
+    "fr": "Problème",
+    "he": "בעיה"
+   }
+  },
+  {
+   "term": "Product",
+   "en": "The thing you build to help your user with their problem. It comes last, not first.",
+   "es": "Lo que construyes para ayudar a tu usuario con su problema. Va al final, no al principio.",
+   "ru": "То, что ты строишь, чтобы помочь пользователю с его проблемой. Это последний шаг, а не первый.",
+   "fr": "Ce que tu construis pour aider ton utilisateur avec son problème. Ça vient en dernier, pas en premier.",
+   "he": "מה שאתם בונים כדי לעזור למשתמש עם הבעיה שלו. זה מגיע בסוף, לא בהתחלה.",
+   "group": "ideas",
+   "name": {
+    "es": "Producto",
+    "ru": "Продукт",
+    "fr": "Produit",
+    "he": "מוצר"
+   }
+  },
+  {
+   "term": "5 Whys",
+   "en": "Ask \"Why?\" until you reach the REAL problem. Trash on the beach → no bins → nobody empties them → REAL: no one is in charge.",
+   "es": "Pregunta \"¿Por qué?\" hasta llegar al problema REAL. Basura en la playa → no hay basureros → nadie los vacía → REAL: nadie está a cargo.",
+   "ru": "Спрашивай «Почему?», пока не дойдёшь до НАСТОЯЩЕЙ проблемы. Мусор на пляже → нет баков → никто их не выносит → НАСТОЯЩАЯ: никто не отвечает.",
+   "fr": "Demande « Pourquoi ? » jusqu'au VRAI problème. Déchets sur la plage → pas de poubelles → personne ne les vide → VRAI : personne n'est responsable.",
+   "he": "שאלו \"למה?\" עד שמגיעים לבעיה האמיתית. זבל על החוף → אין פחים → אף אחד לא מרוקן → האמיתית: אף אחד לא אחראי.",
+   "group": "ideas",
+   "name": {
+    "es": "5 porqués",
+    "ru": "5 «почему»",
+    "fr": "5 pourquoi",
+    "he": "5 למה"
+   }
+  },
+  {
+   "term": "Persona",
+   "en": "ONE made-up person who has your problem. Name, age, one quote. Rosa, 45, runs a soda: \"I pick up trash every morning.\"",
+   "es": "UNA persona inventada que tiene tu problema. Nombre, edad, una frase. Rosa, 45, tiene una soda: \"Recojo basura cada mañana.\"",
+   "ru": "ОДИН придуманный человек с твоей проблемой. Имя, возраст, одна фраза. Роза, 45, держит кафе: «Каждое утро я собираю мусор.»",
+   "fr": "UNE personne inventée qui a ton problème. Nom, âge, une phrase. Rosa, 45 ans, tient une soda : « Je ramasse les déchets chaque matin. »",
+   "he": "אדם אחד מומצא שיש לו את הבעיה שלכם. שם, גיל, משפט אחד. רוזה, 45, מנהלת דוכן: \"אני אוספת זבל כל בוקר.\"",
+   "group": "ideas",
+   "name": {
+    "es": "Persona",
+    "ru": "Персона",
+    "fr": "Persona",
+    "he": "פרסונה"
+   }
+  },
+  {
+   "term": "Interview",
+   "en": "Ask about THEIR life, not your idea. \"Tell me about the last time it happened.\" Never ask: \"Would you use my app?\"",
+   "es": "Pregunta por SU vida, no por tu idea. \"Cuéntame la última vez que pasó.\" Nunca: \"¿Usarías mi app?\"",
+   "ru": "Спрашивай про ИХ жизнь, а не про свою идею. «Расскажи, когда это было в последний раз.» Никогда: «Ты бы пользовался моим приложением?»",
+   "fr": "Demande sur LEUR vie, pas sur ton idée. « Raconte-moi la dernière fois que c'est arrivé. » Jamais : « Tu utiliserais mon appli ? »",
+   "he": "שאלו על החיים שלהם, לא על הרעיון שלכם. \"ספרו לי על הפעם האחרונה שזה קרה.\" אף פעם לא: \"הייתם משתמשים באפליקציה שלי?\"",
+   "group": "ideas",
+   "name": {
+    "es": "Entrevista",
+    "ru": "Интервью",
+    "fr": "Interview",
+    "he": "ראיון"
+   }
+  },
+  {
+   "term": "First principles",
+   "en": "What is true? What are we only guessing? \"We need an app.\" True: nobody empties the bins. Maybe a list on the wall is enough.",
+   "es": "¿Qué es verdad? ¿Qué solo suponemos? \"Necesitamos una app.\" Verdad: nadie vacía los basureros. Quizás basta una lista en la pared.",
+   "ru": "Что правда? А что мы только предполагаем? «Нам нужно приложение.» Правда: никто не выносит баки. Может, хватит списка на стене.",
+   "fr": "Qu'est-ce qui est vrai ? Qu'est-ce qu'on suppose ? « Il nous faut une appli. » Vrai : personne ne vide les poubelles. Une liste au mur suffit peut-être.",
+   "he": "מה נכון? מה אנחנו רק מניחים? \"אנחנו צריכים אפליקציה.\" נכון: אף אחד לא מרוקן את הפחים. אולי מספיקה רשימה על הקיר.",
+   "group": "ideas",
+   "name": {
+    "es": "Primeros principios",
+    "ru": "Первые принципы",
+    "fr": "Premiers principes",
+    "he": "עקרונות יסוד"
+   }
+  },
+  {
+   "term": "MVP",
+   "en": "Minimum Viable Product: the smallest version that already helps. If your sentence has \"and\", that's two things. Pick one.",
+   "es": "Producto mínimo viable: la versión más pequeña que ya ayuda. ¿Tu frase tiene \"y\"? Son dos cosas. Elige una.",
+   "ru": "Минимально жизнеспособный продукт: самая маленькая версия, которая уже помогает. Есть «и» во фразе? Это две вещи. Выбери одну.",
+   "fr": "Produit minimum viable : la plus petite version qui aide déjà. Ta phrase contient « et » ? Ce sont deux choses. Choisis-en une.",
+   "he": "מוצר מינימלי: הגרסה הכי קטנה שכבר עוזרת. יש \"ו\" במשפט? אלה שני דברים. בחרו אחד.",
+   "group": "ideas"
+  },
+  {
+   "term": "PRD",
+   "en": "One page: WHAT you're building and FOR WHOM. Project name, idea, problem, 5 Whys, persona, interviews, the one thing.",
+   "es": "Una página: QUÉ construyes y PARA QUIÉN. Nombre, idea, problema, 5 porqués, persona, entrevistas, la única cosa.",
+   "ru": "Одна страница: ЧТО ты строишь и ДЛЯ КОГО. Название, идея, проблема, 5 «почему», персона, интервью, одна главная вещь.",
+   "fr": "Une page : QUOI tu construis et POUR QUI. Nom, idée, problème, 5 pourquoi, persona, interviews, la seule chose.",
+   "he": "עמוד אחד: מה אתם בונים ובשביל מי. שם, רעיון, בעיה, 5 למה, פרסונה, ראיונות, הדבר האחד.",
+   "group": "ideas"
+  },
   {
    "term": "Browser",
    "en": "The app you use to open websites, like Chrome, Safari or Edge. GitHub opens in it.",
    "es": "La app para abrir páginas web, como Chrome, Safari o Edge. GitHub se abre ahí.",
    "ru": "Программа, в которой открываются сайты: Chrome, Safari или Edge. GitHub открывается в ней.",
    "fr": "L'appli pour ouvrir des sites web, comme Chrome, Safari ou Edge. GitHub s'ouvre dedans.",
-   "he": "האפליקציה שבה פותחים אתרים, כמו Chrome, ‏Safari או Edge. ‏GitHub נפתח בה."
+   "he": "האפליקציה שבה פותחים אתרים, כמו Chrome, ‏Safari או Edge. ‏GitHub נפתח בה.",
+   "group": "computer"
   },
   {
    "term": "Address bar",
@@ -360,7 +499,8 @@
    "es": "La barra larga arriba del navegador. Escribe ahí la dirección, como github.com, y presiona Enter.",
    "ru": "Длинная строка в самом верху браузера. Впиши адрес сайта, например github.com, и нажми Enter.",
    "fr": "La longue barre tout en haut du navigateur. Tape l'adresse du site, comme github.com, puis Entrée.",
-   "he": "השורה הארוכה בראש הדפדפן. כותבים שם כתובת אתר, כמו github.com, ולוחצים Enter."
+   "he": "השורה הארוכה בראש הדפדפן. כותבים שם כתובת אתר, כמו github.com, ולוחצים Enter.",
+   "group": "computer"
   },
   {
    "term": "Tab",
@@ -368,7 +508,8 @@
    "es": "Cada página abierta tiene una pestaña arriba. Haz clic para cambiar; la x pequeña la cierra.",
    "ru": "У каждого открытого сайта есть вкладка сверху. Нажми, чтобы переключиться; маленький крестик закрывает её.",
    "fr": "Chaque site ouvert a un onglet en haut. Clique pour changer ; la petite croix le ferme.",
-   "he": "לכל אתר פתוח יש לשונית למעלה. לוחצים כדי לעבור; ה-x הקטן סוגר אותה."
+   "he": "לכל אתר פתוח יש לשונית למעלה. לוחצים כדי לעבור; ה-x הקטן סוגר אותה.",
+   "group": "computer"
   },
   {
    "term": "Download",
@@ -376,7 +517,8 @@
    "es": "Copiar un archivo de una página a tu computadora. Llega a la carpeta Descargas (Downloads).",
    "ru": "Сохранить файл с сайта на компьютер. Он попадает в папку «Загрузки» (Downloads).",
    "fr": "Copier un fichier d'un site vers ton ordinateur. Il arrive dans le dossier Téléchargements (Downloads).",
-   "he": "העתקת קובץ מאתר למחשב. הוא מגיע לתיקיית ההורדות (Downloads)."
+   "he": "העתקת קובץ מאתר למחשב. הוא מגיע לתיקיית ההורדות (Downloads).",
+   "group": "computer"
   },
   {
    "term": "File",
@@ -384,7 +526,8 @@
    "es": "Una cosa guardada en tu computadora, como una foto o un documento. Su nombre termina con un punto y unas letras: my-idea.md, foto.jpg.",
    "ru": "Одна сохранённая вещь на компьютере: картинка, документ. Имя кончается точкой и буквами: my-idea.md, photo.jpg.",
    "fr": "Une chose enregistrée sur ton ordinateur, comme une image ou un document. Son nom finit par un point et quelques lettres : my-idea.md, photo.jpg.",
-   "he": "דבר אחד ששמור במחשב, כמו תמונה או מסמך. השם שלו נגמר בנקודה וכמה אותיות: my-idea.md, ‏photo.jpg."
+   "he": "דבר אחד ששמור במחשב, כמו תמונה או מסמך. השם שלו נגמר בנקודה וכמה אותיות: my-idea.md, ‏photo.jpg.",
+   "group": "computer"
   },
   {
    "term": "Folder",
@@ -392,7 +535,8 @@
    "es": "Un contenedor de archivos y otras carpetas, como un cajón. Guarda tu proyecto en Documentos → hecho-en-osa.",
    "ru": "Контейнер для файлов и других папок, как ящик. Храни проект в «Документы» → hecho-en-osa.",
    "fr": "Un contenant pour fichiers et autres dossiers, comme un tiroir. Range ton projet dans Documents → hecho-en-osa.",
-   "he": "מקום שמחזיק קבצים ותיקיות אחרות, כמו מגירה. שמרו את הפרויקט ב-Documents ← hecho-en-osa."
+   "he": "מקום שמחזיק קבצים ותיקיות אחרות, כמו מגירה. שמרו את הפרויקט ב-Documents ← hecho-en-osa.",
+   "group": "computer"
   },
   {
    "term": "Zip file",
@@ -400,7 +544,8 @@
    "es": "Un archivo empacado que termina en .zip. Doble clic para abrirlo. En Mac, VS Code se descarga como zip.",
    "ru": "Упакованный файл с окончанием .zip. Дважды нажми, чтобы распаковать. На Mac VS Code скачивается как zip.",
    "fr": "Un fichier compressé qui finit par .zip. Double-clique pour le décompresser. Sur Mac, VS Code se télécharge en zip.",
-   "he": "קובץ ארוז שנגמר ב-.zip. לחיצה כפולה פותחת אותו. ב-Mac, ‏VS Code יורד כקובץ zip."
+   "he": "קובץ ארוז שנגמר ב-.zip. לחיצה כפולה פותחת אותו. ב-Mac, ‏VS Code יורד כקובץ zip.",
+   "group": "computer"
   },
   {
    "term": "Installer",
@@ -408,7 +553,8 @@
    "es": "Un archivo que instala una app nueva. Ábrelo una vez, sigue los pasos y luego puedes borrarlo.",
    "ru": "Файл, который устанавливает новую программу. Открой его, пройди шаги, потом его можно удалить.",
    "fr": "Un fichier qui installe une nouvelle appli. Ouvre-le une fois, suis les étapes, puis tu peux le supprimer.",
-   "he": "קובץ שמתקין אפליקציה חדשה. פותחים אותו פעם אחת, עוקבים אחרי השלבים, ואז אפשר למחוק אותו."
+   "he": "קובץ שמתקין אפליקציה חדשה. פותחים אותו פעם אחת, עוקבים אחרי השלבים, ואז אפשר למחוק אותו.",
+   "group": "computer"
   },
   {
    "term": "Right-click",
@@ -416,7 +562,8 @@
    "es": "Abre un menú pequeño. Mac (trackpad): clic con dos dedos. Windows: el botón derecho del ratón.",
    "ru": "Открывает маленькое меню. Mac (трекпад): нажми двумя пальцами. Windows: правая кнопка мыши.",
    "fr": "Ouvre un petit menu. Mac (pavé tactile) : clic à deux doigts. Windows : le bouton droit de la souris.",
-   "he": "פותח תפריט קטן. ב-Mac (משטח מגע): לוחצים בשתי אצבעות. ב-Windows: הכפתור הימני בעכבר."
+   "he": "פותח תפריט קטן. ב-Mac (משטח מגע): לוחצים בשתי אצבעות. ב-Windows: הכפתור הימני בעכבר.",
+   "group": "computer"
   },
   {
    "term": "Screenshot",
@@ -424,7 +571,8 @@
    "es": "Una foto de tu pantalla. Mac: Cmd + Shift + 4. Windows: tecla Windows + Shift + S. Luego arrastra un cuadro.",
    "ru": "Снимок экрана. Mac: Cmd + Shift + 4. Windows: клавиша Windows + Shift + S. Потом выдели область.",
    "fr": "Une photo de ton écran. Mac : Cmd + Maj + 4. Windows : touche Windows + Maj + S. Puis trace un cadre.",
-   "he": "תמונה של המסך. ב-Mac: ‏Cmd + Shift + 4. ב-Windows: מקש Windows + ‏Shift + S. ואז גוררים ריבוע."
+   "he": "תמונה של המסך. ב-Mac: ‏Cmd + Shift + 4. ב-Windows: מקש Windows + ‏Shift + S. ואז גוררים ריבוע.",
+   "group": "computer"
   },
   {
    "term": "VS Code",
@@ -432,7 +580,8 @@
    "es": "La app donde escribes código y archivos de texto. Como un cuaderno que entiende código.",
    "ru": "Программа, где пишут код и текстовые файлы. Как тетрадь, которая понимает код.",
    "fr": "L'appli où tu écris du code et des fichiers texte. Comme un cahier qui comprend le code.",
-   "he": "האפליקציה שבה כותבים קוד וקבצי טקסט. כמו מחברת שמבינה קוד."
+   "he": "האפליקציה שבה כותבים קוד וקבצי טקסט. כמו מחברת שמבינה קוד.",
+   "group": "computer"
   },
   {
    "term": "Terminal",
@@ -440,7 +589,8 @@
    "es": "Una ventana donde escribes comandos en vez de hacer clic. En VS Code: Terminal → New Terminal. Se abre abajo.",
    "ru": "Окно, где печатаешь команды вместо кликов. В VS Code: Terminal → New Terminal. Оно откроется внизу.",
    "fr": "Une fenêtre où tu tapes des commandes au lieu de cliquer. Dans VS Code : Terminal → New Terminal. Elle s'ouvre en bas.",
-   "he": "חלון שבו מקלידים פקודות במקום ללחוץ. ב-VS Code: ‏Terminal ← New Terminal. הוא נפתח למטה."
+   "he": "חלון שבו מקלידים פקודות במקום ללחוץ. ב-VS Code: ‏Terminal ← New Terminal. הוא נפתח למטה.",
+   "group": "computer"
   },
   {
    "term": "Command",
@@ -448,7 +598,8 @@
    "es": "Una instrucción que escribes en la terminal, como git --version. Presiona Enter para ejecutarla.",
    "ru": "Одна инструкция, которую печатаешь в терминале, например git --version. Нажми Enter, чтобы выполнить.",
    "fr": "Une instruction que tu tapes dans le terminal, comme git --version. Appuie sur Entrée pour la lancer.",
-   "he": "הוראה אחת שמקלידים בטרמינל, כמו git --version. לוחצים Enter כדי להריץ."
+   "he": "הוראה אחת שמקלידים בטרמינל, כמו git --version. לוחצים Enter כדי להריץ.",
+   "group": "computer"
   },
   {
    "term": "Git",
@@ -456,7 +607,8 @@
    "es": "Una máquina del tiempo para tu código. Guarda cada versión para que puedas volver atrás.",
    "ru": "Машина времени для кода. Сохраняет каждую версию, чтобы можно было вернуться.",
    "fr": "Une machine à remonter le temps pour ton code. Elle garde chaque version pour revenir en arrière.",
-   "he": "מכונת זמן לקוד שלך. היא שומרת כל גרסה כדי שאפשר יהיה לחזור אחורה."
+   "he": "מכונת זמן לקוד שלך. היא שומרת כל גרסה כדי שאפשר יהיה לחזור אחורה.",
+   "group": "computer"
   },
   {
    "term": "GitHub",
@@ -464,7 +616,8 @@
    "es": "Una página web donde tu código vive en internet, para que otros lo vean y trabajen contigo. Entras con tu handle.",
    "ru": "Сайт, где твой код живёт в интернете, чтобы другие видели его и работали с тобой. Входишь под своим ником.",
    "fr": "Un site où ton code vit en ligne, pour que d'autres le voient et travaillent avec toi. Tu te connectes avec ton pseudo.",
-   "he": "אתר שבו הקוד שלך חי באינטרנט, כדי שאחרים יראו אותו ויעבדו איתך. נכנסים עם שם המשתמש."
+   "he": "אתר שבו הקוד שלך חי באינטרנט, כדי שאחרים יראו אותו ויעבדו איתך. נכנסים עם שם המשתמש.",
+   "group": "computer"
   },
   {
    "term": "Handle",
@@ -472,7 +625,8 @@
    "es": "Tu nombre en GitHub. No tu nombre real: sin apellido, año de nacimiento ni escuela.",
    "ru": "Твоё имя на GitHub. Не настоящее: без фамилии, года рождения и школы.",
    "fr": "Ton nom sur GitHub. Pas ton vrai nom : pas de nom de famille, d'année de naissance ni d'école.",
-   "he": "השם שלך ב-GitHub. לא השם האמיתי: בלי שם משפחה, שנת לידה או בית ספר."
+   "he": "השם שלך ב-GitHub. לא השם האמיתי: בלי שם משפחה, שנת לידה או בית ספר.",
+   "group": "computer"
   },
   {
    "term": "Repository",
@@ -480,7 +634,8 @@
    "es": "Una carpeta de proyecto que vive en GitHub. \"Repo\" para abreviar. La tuya: github.com/tu-handle/hello-osa.",
    "ru": "Папка проекта на GitHub. Коротко — «репо». Твоя: github.com/твой-ник/hello-osa.",
    "fr": "Un dossier de projet sur GitHub. « Repo » en abrégé. Le tien : github.com/ton-pseudo/hello-osa.",
-   "he": "תיקיית פרויקט שחיה ב-GitHub. בקיצור \"ריפו\". שלך: github.com/your-handle/hello-osa."
+   "he": "תיקיית פרויקט שחיה ב-GitHub. בקיצור \"ריפו\". שלך: github.com/your-handle/hello-osa.",
+   "group": "computer"
   },
   {
    "term": "Commit",
@@ -488,7 +643,8 @@
    "es": "Una foto guardada de tu trabajo, con un mensaje corto. Como un punto de guardado en un juego.",
    "ru": "Сохранённый снимок твоей работы с коротким сообщением. Как точка сохранения в игре.",
    "fr": "Une photo enregistrée de ton travail, avec un court message. Comme un point de sauvegarde dans un jeu.",
-   "he": "צילום שמור של העבודה שלך, עם הודעה קצרה. כמו נקודת שמירה במשחק."
+   "he": "צילום שמור של העבודה שלך, עם הודעה קצרה. כמו נקודת שמירה במשחק.",
+   "group": "computer"
   },
   {
    "term": "Push",
@@ -496,7 +652,8 @@
    "es": "Enviar tus commits desde tu computadora a GitHub, para que estén en internet.",
    "ru": "Отправить коммиты с компьютера на GitHub, чтобы они появились онлайн.",
    "fr": "Envoyer tes commits de ton ordinateur vers GitHub, pour qu'ils soient en ligne.",
-   "he": "שליחת ה-commits מהמחשב ל-GitHub, כדי שיהיו באינטרנט."
+   "he": "שליחת ה-commits מהמחשב ל-GitHub, כדי שיהיו באינטרנט.",
+   "group": "computer"
   }
  ]
 }
