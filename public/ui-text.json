@@ -122,8 +122,9 @@
    "wIdeas": "Grandes ideas",
    "wComputer": "Palabras de computadora",
    "motto": "Sin usuario, no hay problema. Sin problema, no hay producto.",
-   "tierE": "⭐ Esencial",
-   "tierB": "🎁 Bonus"
+   "tierB": "🛠️ Builder · + VS Code y Git",
+   "tierX": "🟢 Express · cualquier aparato",
+   "tierF": "🏆 Full Builder · todo, gana la insignia"
   },
   "en": {
    "help": "Chat",
@@ -183,8 +184,9 @@
    "wIdeas": "Big ideas",
    "wComputer": "Computer words",
    "motto": "No user, no problem. No problem, no product.",
-   "tierE": "⭐ Essential",
-   "tierB": "🎁 Bonus"
+   "tierB": "🛠️ Builder · + VS Code and Git",
+   "tierX": "🟢 Express · any device",
+   "tierF": "🏆 Full Builder · everything, earns the badge"
   },
   "ru": {
    "help": "Чат",
@@ -244,8 +246,9 @@
    "wIdeas": "Главные идеи",
    "wComputer": "Компьютерные слова",
    "motto": "Нет пользователя — нет проблемы. Нет проблемы — нет продукта.",
-   "tierE": "⭐ Обязательно",
-   "tierB": "🎁 Бонус"
+   "tierB": "🛠️ Builder · + VS Code и Git",
+   "tierX": "🟢 Express · любое устройство",
+   "tierF": "🏆 Full Builder · всё, получи значок"
   },
   "fr": {
    "help": "Chat",
@@ -305,8 +308,9 @@
    "wIdeas": "Grandes idées",
    "wComputer": "Mots d'ordinateur",
    "motto": "Pas d'utilisateur, pas de problème. Pas de problème, pas de produit.",
-   "tierE": "⭐ Essentiel",
-   "tierB": "🎁 Bonus"
+   "tierB": "🛠️ Builder · + VS Code et Git",
+   "tierX": "🟢 Express · tout appareil",
+   "tierF": "🏆 Full Builder · tout, gagne le badge"
   },
   "he": {
    "help": "צ'אט",
@@ -366,8 +370,9 @@
    "wIdeas": "רעיונות גדולים",
    "wComputer": "מילים של מחשב",
    "motto": "אין משתמש, אין בעיה. אין בעיה, אין מוצר.",
-   "tierE": "⭐ חובה",
-   "tierB": "🎁 בונוס"
+   "tierB": "🛠️ Builder · ‏+ VS Code ו-Git",
+   "tierX": "🟢 Express · כל מכשיר",
+   "tierF": "🏆 Full Builder · הכול, מרוויחים תג"
   }
  },
  "words": [
@@ -666,15 +671,38 @@
    "group": "computer"
   }
  ],
- "essential_steps": {
+ "tiers": {
   "1": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   13
+   {
+    "key": "tierX",
+    "steps": [
+     1,
+     2,
+     3,
+     13
+    ]
+   },
+   {
+    "key": "tierB",
+    "steps": [
+     4,
+     5,
+     6
+    ]
+   },
+   {
+    "key": "tierF",
+    "steps": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15
+    ]
+   }
   ]
  }
 }

@@ -1,6 +1,10 @@
 # Week 1 · Your first website
 
-Required: Steps 1–6 and 13 (about 1 hour). Bonus: 7–12, 14, 15.
+Three ways to finish Week 1. Every Builder picks one; all three count:
+- 🟢 Express: Steps 1, 2, 3 and 13 (GitHub account, private email, post on the Wall). Works on any device: phone, iPad, old computer. Use this for Builders who can't install apps.
+- 🛠️ Builder: Express plus Steps 4, 5 and 6 (install VS Code and Git, tell Git who you are).
+- 🏆 Full Builder: every step, 1 to 15. Earns the Full Builder badge.
+If a Builder is stuck on installing (Steps 4–6) or has an old computer, tell them kindly that Express already counts, and they can come back to Builder later.
 You need an email you can open before Step 2. Under 13: a parent creates the account with their email.
 
 ## Problem types (most Week 1 questions are one of these)

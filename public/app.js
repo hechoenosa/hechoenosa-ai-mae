@@ -65,11 +65,10 @@ function weekMenu() {
 function stepMenu(w) {
   ctx = { week: w, step: null, os: null }; showCtx();
   backFn = weekMenu;
-  const ess = (UI.essential_steps || {})[w];
-  const chip = (i) => [STEPS[w][i], () => pickStep(i + 1), String(i + 1)];
-  if (!ess) return setChips(STEPS[w].map((n, i) => chip(i)));
-  const idx = STEPS[w].map((n, i) => i);
-  setChips([[t("tierE"), "heading"], ...idx.filter((i) => ess.includes(i + 1)).map(chip), [t("tierB"), "heading"], ...idx.filter((i) => !ess.includes(i + 1)).map(chip)]);
+  const tiers = (UI.tiers || {})[w];
+  const chip = (i) => [STEPS[w][i - 1], () => pickStep(i), String(i)];
+  if (!tiers) return setChips(STEPS[w].map((n, i) => chip(i + 1)));
+  setChips(tiers.flatMap((tr) => [[t(tr.key), "heading"], ...tr.steps.map(chip)]));
 }
 function pickWeek(w) {
   bubble("me", t("w" + w)); bubble("bot", t("step"));
