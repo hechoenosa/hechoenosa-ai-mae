@@ -107,10 +107,11 @@ details pre{margin:0;padding:4px 14px 14px;white-space:pre-wrap;word-wrap:break-
 .langs button{border:0;background:none;cursor:pointer;font:500 10.5px var(--mono);color:var(--muted);padding:4px 4px;border-radius:5px;letter-spacing:.03em}
 .langs button[aria-pressed="true"]{color:var(--ink);background:rgb(127 127 127 / .14)}
 .close{border:0;background:none;cursor:pointer;color:var(--muted);font-size:20px;line-height:1;padding:2px 2px 2px 6px}
-.views{display:flex;gap:18px;border-bottom:1px solid var(--line)}
-.views button{border:0;background:none;cursor:pointer;padding:6px 0 8px;font:700 14px var(--body);color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1px}
-.views button[aria-selected="true"]{color:var(--ink);border-color:var(--sun)}
-.parents .views button[aria-selected="true"]{border-color:var(--sea)}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:rgb(127 127 127 / .14);border-radius:999px;padding:4px;margin-bottom:6px}
+.views button{border:0;cursor:pointer;padding:9px 10px;border-radius:999px;font:700 14.5px var(--body);color:var(--ink);background:transparent;display:flex;align-items:center;justify-content:center;gap:7px}
+.views button:hover{background:rgb(127 127 127 / .12)}
+.views button[aria-selected="true"]{background:var(--leaf);color:#fff;box-shadow:0 2px 8px rgb(0 0 0 / .12)}
+.views svg{width:17px;height:17px;flex:none}
 .ctx{display:flex;gap:5px;font:500 10.5px var(--mono);color:var(--muted);padding:6px 14px 0}
 .ctx:empty{display:none}
 .ctx b{color:var(--ink);font-weight:500;background:rgb(127 127 127 / .13);border-radius:6px;padding:1px 6px}
@@ -206,8 +207,8 @@ body{margin:0;min-height:100%}
         <div class="langs" id="langs" role="group" aria-label="Language"></div>
       </div>
       <div class="views" role="tablist">
-        <button role="tab" id="v-help" aria-selected="true"></button>
-        <button role="tab" id="v-words" aria-selected="false"></button>
+        <button role="tab" id="v-help" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span id="v-help-t"></span></button>
+        <button role="tab" id="v-words" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg><span id="v-words-t"></span></button>
       </div>
     </div>
 

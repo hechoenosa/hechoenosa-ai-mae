@@ -100,7 +100,7 @@ function greet() {
 function paint() {
   document.documentElement.lang = lang;
   $("screen").dir = lang === "he" ? "rtl" : "ltr";
-  $("v-help").textContent = t("help"); $("v-words").textContent = t("words");
+  $("v-help-t").textContent = t("help"); $("v-words-t").textContent = t("words");
   $("fam-t").textContent = t("fam"); $("restart").textContent = t("restart"); $("human").textContent = t("person"); $("guides").textContent = t("guides");
   $("q").placeholder = mode === "kids" ? t("phK") : t("phP");
   $("attach").setAttribute("aria-label", t("attach")); $("attach").title = t("attach");
