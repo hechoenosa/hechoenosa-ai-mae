@@ -42,6 +42,7 @@ function setChips(items, back = backFn) {
   chips.textContent = "";
   if (back) items = [...items, [t("back"), back]];
   for (const [label, fn, num] of items) {
+    if (fn === "heading") { const h = document.createElement("div"); h.className = "tier"; h.textContent = label; chips.append(h); continue; }
     const b = document.createElement("button"); b.type = "button"; b.dir = "auto";
     if (num) { const n = document.createElement("b"); n.textContent = num; b.append(n); }
     b.append(label); b.onclick = fn; chips.append(b);
@@ -64,7 +65,11 @@ function weekMenu() {
 function stepMenu(w) {
   ctx = { week: w, step: null, os: null }; showCtx();
   backFn = weekMenu;
-  setChips(STEPS[w].map((n, i) => [n, () => pickStep(i + 1), String(i + 1)]));
+  const ess = (UI.essential_steps || {})[w];
+  const chip = (i) => [STEPS[w][i], () => pickStep(i + 1), String(i + 1)];
+  if (!ess) return setChips(STEPS[w].map((n, i) => chip(i)));
+  const idx = STEPS[w].map((n, i) => i);
+  setChips([[t("tierE"), "heading"], ...idx.filter((i) => ess.includes(i + 1)).map(chip), [t("tierB"), "heading"], ...idx.filter((i) => !ess.includes(i + 1)).map(chip)]);
 }
 function pickWeek(w) {
   bubble("me", t("w" + w)); bubble("bot", t("step"));

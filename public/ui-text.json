@@ -121,7 +121,9 @@
    "guides": "Guías",
    "wIdeas": "Grandes ideas",
    "wComputer": "Palabras de computadora",
-   "motto": "Sin usuario, no hay problema. Sin problema, no hay producto."
+   "motto": "Sin usuario, no hay problema. Sin problema, no hay producto.",
+   "tierE": "⭐ Esencial",
+   "tierB": "🎁 Bonus"
   },
   "en": {
    "help": "Chat",
@@ -180,7 +182,9 @@
    "guides": "Guides",
    "wIdeas": "Big ideas",
    "wComputer": "Computer words",
-   "motto": "No user, no problem. No problem, no product."
+   "motto": "No user, no problem. No problem, no product.",
+   "tierE": "⭐ Essential",
+   "tierB": "🎁 Bonus"
   },
   "ru": {
    "help": "Чат",
@@ -239,7 +243,9 @@
    "guides": "Шпаргалки",
    "wIdeas": "Главные идеи",
    "wComputer": "Компьютерные слова",
-   "motto": "Нет пользователя — нет проблемы. Нет проблемы — нет продукта."
+   "motto": "Нет пользователя — нет проблемы. Нет проблемы — нет продукта.",
+   "tierE": "⭐ Обязательно",
+   "tierB": "🎁 Бонус"
   },
   "fr": {
    "help": "Chat",
@@ -298,7 +304,9 @@
    "guides": "Guides",
    "wIdeas": "Grandes idées",
    "wComputer": "Mots d'ordinateur",
-   "motto": "Pas d'utilisateur, pas de problème. Pas de problème, pas de produit."
+   "motto": "Pas d'utilisateur, pas de problème. Pas de problème, pas de produit.",
+   "tierE": "⭐ Essentiel",
+   "tierB": "🎁 Bonus"
   },
   "he": {
    "help": "צ'אט",
@@ -357,7 +365,9 @@
    "guides": "מדריכים",
    "wIdeas": "רעיונות גדולים",
    "wComputer": "מילים של מחשב",
-   "motto": "אין משתמש, אין בעיה. אין בעיה, אין מוצר."
+   "motto": "אין משתמש, אין בעיה. אין בעיה, אין מוצר.",
+   "tierE": "⭐ חובה",
+   "tierB": "🎁 בונוס"
   }
  },
  "words": [
@@ -655,5 +665,16 @@
    "he": "שליחת ה-commits מהמחשב ל-GitHub, כדי שיהיו באינטרנט.",
    "group": "computer"
   }
- ]
+ ],
+ "essential_steps": {
+  "1": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   13
+  ]
+ }
 }
