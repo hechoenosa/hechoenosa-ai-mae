@@ -31,9 +31,9 @@ test("unknown language gets Spanish and English", async () => {
   const r = await run(fake({ gate: { area: "out", lang: "other", problem: "other" } }), { q: "hallo" });
   assert.match(r.text, /fuera/); assert.match(r.text, /outside/);
 });
-test("an answer with a date is blocked and sent to the mentor", async () => {
+test("an answer with a date is blocked with a kind fallback", async () => {
   const r = await run(fake({ answer: "It's due Sunday 1 November!" }));
-  assert.equal(r.kind, "fallback"); assert.ok(r.human); assert.match(r.text, /mentor/);
+  assert.equal(r.kind, "fallback"); assert.ok(r.human); assert.doesNotMatch(r.text, /mentor/); assert.match(r.text, /different way/);
 });
 test("an answer linking an unknown site is blocked", async () => {
   const r = await run(fake({ answer: "Get it at https://free-vscode-download.ru/setup.exe" }));
@@ -50,7 +50,7 @@ test("did their Week 3 work → blocked", async () => {
   assert.equal((await run(fake({ check: { on_topic: true, grounded: true, does_their_work: true } }))).kind, "fallback");
 });
 test("[HUMAN] tag hands off and is hidden from the kid", async () => {
-  const r = await run(fake({ answer: "Please reach out to your mentor.\n[HUMAN]" }));
+  const r = await run(fake({ answer: "That's outside what I know for now.\n[HUMAN]" }));
   assert.ok(r.human); assert.doesNotMatch(r.text, /HUMAN/);
 });
 test("version numbers are not dates", () => {

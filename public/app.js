@@ -170,12 +170,10 @@ async function ask(q) {
     }).then((x) => x.json());
     render(out, r.text || t("sentD"));
     if (r.kind === "answer" && r.user) turns.push({ role: "user", content: r.user }, { role: "assistant", content: r.text });
-    if (r.human || r.kind === "fallback" || r.kind === "error" || r.kind === "limit") handoff();
     if (debug) trace(out, r.checks);
     if (mode === "kids") setChips([]);
   } catch {
     render(out, T[lang].sentD);
-    handoff();
   } finally { busy = false; $("send").disabled = false; }
 }
 

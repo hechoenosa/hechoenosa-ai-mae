@@ -45,4 +45,4 @@ Many builders and parents are new to computers. Never assume they know a word. I
 ## Safety basics
 - Only download from the official sites named in the assignment (code.visualstudio.com, git-scm.com, github.com).
 - Never share your password or the code GitHub emails you. Not with friends, not with AI-Mae.
-- If a website asks to install something extra or shows lots of ads, close it and ask your mentor.
+- If a website asks to install something extra or shows lots of ads, close it and ask a parent.

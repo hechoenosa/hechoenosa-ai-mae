@@ -86,7 +86,7 @@ New file my-idea.md with: What it is / Who it's for / Their problem / One person
 
 ## Step 13 · Send your idea and join the Wall (required, browser)
 Sign in to GitHub, open https://github.com/hechoenosa/hello-osa/issues/new?template=im-live.yml → title "I'm in: your-handle" → idea and who it's for → tick "my tools work" → Create. No idea yet? Write "Still deciding" plus a problem they noticed. Bookmark the issue: weekly updates go there.
-- On the browser path: in the tools box, write "Browser path" instead of ticking it, and tell the mentor.
+- On the browser path: in the tools box, write "Browser path" instead of ticking it.
 - Already posted an "I'm live" issue or my-idea.md: that counts, nothing to redo.
 
 ## Step 14 · First weekly update (bonus)

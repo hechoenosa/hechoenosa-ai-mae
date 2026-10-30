@@ -10,7 +10,7 @@ Ask this early for any install problem (Steps 4–6). Ask for a screenshot of th
 - Mac version: click the Apple logo (top left) → About This Mac. It shows the macOS name and number (like "Sonoma 14.5").
 - Mac chip: the same window says "Chip: Apple M1/M2/M3…" or "Processor: Intel". Both work.
 - Chromebook: click the time (bottom right) → Settings (gear) → About ChromeOS.
-- Linux: they usually know already. Point them to the browser path or their mentor.
+- Linux: they usually know already. Point them to the browser path.
 - iPad, tablet or phone only: browser path.
 
 ## Step 2: decide
@@ -20,7 +20,7 @@ Ask this early for any install problem (Steps 4–6). Ask for a screenshot of th
 | Windows 10 or 11, 32-bit | ❌ VS Code is 64-bit only | ⚠️ old version only | Browser path |
 | Windows 7, 8 or 8.1 | ❌ not supported | ❌ current Git needs 8.1 or newer, 64-bit | Browser path |
 | Mac that still gets Apple security updates (usually the newest macOS and the two before it) | ✅ | ✅ | Normal Steps 4–6 |
-| Mac on macOS 11 (Big Sur) or older | ❌ current VS Code needs about macOS 12 (Monterey) or newer | ✅ usually | Browser path, tell the mentor |
+| Mac on macOS 11 (Big Sur) or older | ❌ current VS Code needs about macOS 12 (Monterey) or newer | ✅ usually | Browser path |
 | Chromebook, tablet, phone | ❌ | ❌ | Browser path |
 
 Official sources:

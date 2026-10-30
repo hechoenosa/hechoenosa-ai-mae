@@ -6,7 +6,6 @@ For builders whose computer can't install VS Code or Git, who are on a Chromeboo
 - Steps 1, 2 and 3 as normal (they're already in the browser).
 - Skip Steps 4, 5 and 6 for now.
 - Step 13: post "I'm in" on the Wall. In the tools box, write "Browser path".
-- Tell your mentor in your WhatsApp group: "I'm on the browser path."
 
 ## Make and edit files in the browser (replaces Steps 8–10 and 12)
 1. Do Step 7 as normal to get your own copy of hello-osa.
@@ -19,7 +18,7 @@ For builders whose computer can't install VS Code or Git, who are on a Chromeboo
 Note: github.dev has no terminal, so the git commands from the assignment don't work there. The Commit & Push button does the same job.
 
 ## Coming back later
-If a laptop becomes available later, Steps 4–6 take about 30 minutes, ideally with their mentor next to them.
+If a laptop becomes available later, Steps 4–6 take about 30 minutes, ideally with an adult next to them.
 
 ## Trusted help pages
 - github.dev: https://docs.github.com/en/codespaces/the-githubdev-web-based-editor

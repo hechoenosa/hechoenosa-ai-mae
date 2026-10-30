@@ -30,7 +30,7 @@ How might we [action] for [persona] so that [what changes]? No apps yet. Example
 
 ## Step 7 · Interview 2 people
 10+ minutes each, people like the persona. Safety: people you or your family know, or someone new with a parent next to you. First names only. Ask before recording. Write down who, their exact words, what surprised you.
-- Nobody to interview: ask your mentor. Family counts.
+- Nobody to interview: family counts. Start with people at home.
 - Everyone says "great idea!": you explained your idea too early. Ask only about their life.
 
 ## Step 8 · Decide the one thing

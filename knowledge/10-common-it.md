@@ -4,7 +4,7 @@ The everyday problems an IT help desk sees most with first-time setups. Check th
 
 ## "This app isn't compatible with this version of macOS" (old Mac)
 - Current VS Code needs roughly macOS 12 (Monterey) or newer. Check: Apple logo → About This Mac.
-- macOS 11 (Big Sur) or older: don't hunt for old versions. Use the browser path, and tell the mentor. Builders on an old Mac can still do everything for Week 1 in the browser.
+- macOS 11 (Big Sur) or older: don't hunt for old versions. Use the browser path. Builders on an old Mac can still do everything for Week 1 in the browser.
 
 ## Installing asks for a password
 - Mac and Windows ask for the computer's admin password to install apps. That's the computer's password, not GitHub's.
@@ -12,7 +12,7 @@ The everyday problems an IT help desk sees most with first-time setups. Check th
 - School or work computers often block installs completely: use the browser path.
 
 ## Windows: "Windows protected your PC"
-- This blue screen sometimes appears for new downloads. Only if the file came from code.visualstudio.com, git-scm.com or desktop.github.com: click "More info" → "Run anyway". Anything else: stop and ask the mentor.
+- This blue screen sometimes appears for new downloads. Only if the file came from code.visualstudio.com, git-scm.com or desktop.github.com: click "More info" → "Run anyway". Anything else: stop and ask a parent.
 
 ## Windows: installer opened from inside the zip
 - Some downloads are zipped. Right-click the zip → "Extract All" first, then open the installer from the new folder.
