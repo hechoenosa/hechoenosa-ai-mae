@@ -1,0 +1,473 @@
+{
+ "_how_to_edit": "Change any text between quotes. Keep every comma and quote mark. {word} is filled in automatically. If something breaks, Vercel keeps the last working version live and shows the error.",
+ "languages": [
+  [
+   "es",
+   "ES"
+  ],
+  [
+   "en",
+   "EN"
+  ],
+  [
+   "ru",
+   "RU"
+  ],
+  [
+   "fr",
+   "FR"
+  ],
+  [
+   "he",
+   "HE"
+  ]
+ ],
+ "steps": {
+  "1": [
+   "Choose your handle",
+   "Create your GitHub account",
+   "Keep your email private",
+   "Install VS Code",
+   "Install Git",
+   "Tell Git who you are",
+   "Copy the starter",
+   "Bring it to your computer",
+   "Make it yours",
+   "First commit",
+   "Go live",
+   "Write down your idea",
+   "Join the Wall",
+   "Weekly update",
+   "Do it scared"
+  ],
+  "3": [
+   "Watch the videos",
+   "Meet your mentor",
+   "Check your problem",
+   "5 Whys",
+   "Your persona",
+   "How might we",
+   "Interview questions",
+   "Interview 2 people",
+   "The one thing",
+   "Week 3 form"
+  ]
+ },
+ "steps_that_ask_mac_or_windows": {
+  "1": [
+   4,
+   5,
+   6,
+   8,
+   9,
+   10
+  ],
+  "3": []
+ },
+ "text": {
+  "es": {
+   "help": "Ayuda",
+   "words": "Palabras",
+   "greetK": "¡Hola! Soy AI-Mae 👋 Soy una ayudante junior: es mi primera semana y también estoy aprendiendo.\nTe ayudo con tus tareas. Si no sé algo, te mando con tu mentor.\nTus preguntas ayudan a mejorarme para los próximos Builders.\n¿En qué semana estás?",
+   "greetP": "Hola, soy AI-Mae, una ayudante junior: es mi primera semana. Le ayudo a acompañar a su Builder con las tareas. Si no sé algo, le pediré que escriba a su mentor.",
+   "w1": "Semana 1",
+   "w3": "Semana 3",
+   "gen": "Ayuda general",
+   "step": "¿En qué paso estás?",
+   "stepW": "Paso",
+   "os": "¿Usas Mac o Windows?",
+   "other": "Chromebook / tablet / celular",
+   "notSure": "No sé",
+   "osHelp": "Fácil de ver 👀\nMac: hay una manzana arriba a la izquierda.\nWindows: botón de Inicio (4 cuadritos) abajo.\nChromebook: un círculo abajo a la izquierda.",
+   "what": "Escribe qué pasó: lo que ves en la pantalla y lo que intentaste.\nSi puedes, agrega una captura 📷 (solo la pantalla, sin caras ni nombres).",
+   "genQ": "¿Con qué te ayudo? Elige uno o escribe tu pregunta.",
+   "phK": "Escribe qué pasó…",
+   "phP": "Escriba su pregunta…",
+   "fam": "Modo familia",
+   "restart": "Reiniciar",
+   "person": "Hablar con alguien",
+   "wantPerson": "Quiero hablar con una persona",
+   "sent": "Pregúntale a tu mentor 💬",
+   "sentD": "Toma una captura de pantalla y escríbele a tu mentor en tu grupo de WhatsApp.",
+   "thinking": "AI-Mae está pensando…",
+   "checkQ": "Revisando tu pregunta…",
+   "checkA": "Revisando la respuesta…",
+   "shotT": "Captura lista",
+   "remove": "Quitar",
+   "attach": "Agregar una captura",
+   "ws": "Busca una palabra…",
+   "whint": "Toca una palabra para ver qué significa.",
+   "wask": "Preguntar a AI-Mae",
+   "wrand": "🎲 Otra palabra",
+   "askWord": "¿Qué es {word}?",
+   "gen6": [
+    "¿Qué es un navegador?",
+    "¿Dónde están mis descargas?",
+    "Tomar una captura",
+    "¿Qué es la terminal?",
+    "Archivos y carpetas",
+    "¿Qué computadora tengo?"
+   ],
+   "par": [
+    "¿Cómo ayudo con la Semana 1?",
+    "¿Cómo ayudo con la Semana 3?",
+    "¿Qué es GitHub?",
+    "Nuestra computadora es vieja"
+   ]
+  },
+  "en": {
+   "help": "Help",
+   "words": "Words",
+   "greetK": "Hi! I'm AI-Mae 👋 I'm a junior AI helper: it's my first week, and I'm learning too.\nI help with your assignments. If I don't know something, I'll send you to your mentor.\nYour questions help the team make me better for the next Builders.\nWhich week are you on?",
+   "greetP": "Hi, I'm AI-Mae, a junior AI helper in my first week. I help you support your Builder with the assignments. If I don't know something, I'll ask you to reach out to their mentor.",
+   "w1": "Week 1",
+   "w3": "Week 3",
+   "gen": "General help",
+   "step": "Which step are you on?",
+   "stepW": "Step",
+   "os": "Are you on a Mac or Windows?",
+   "other": "Chromebook / tablet / phone",
+   "notSure": "Not sure",
+   "osHelp": "Easy to check 👀\nMac: an Apple logo in the top-left corner.\nWindows: a Start button (four squares) at the bottom.\nChromebook: a circle at the bottom left.",
+   "what": "Type what happened: what you see on the screen and what you tried.\nIf you can, add a screenshot 📷 (just the screen, no faces or names).",
+   "genQ": "What can I help with? Pick one or type your question.",
+   "phK": "Type what happened…",
+   "phP": "Type your question…",
+   "fam": "Family mode",
+   "restart": "Start over",
+   "person": "Talk to a person",
+   "wantPerson": "I'd like to talk to a person",
+   "sent": "Ask your mentor 💬",
+   "sentD": "Take a screenshot and reach out to your mentor in your WhatsApp group.",
+   "thinking": "AI-Mae is thinking…",
+   "checkQ": "Checking your question…",
+   "checkA": "Checking the answer…",
+   "shotT": "Screenshot ready",
+   "remove": "Remove",
+   "attach": "Add a screenshot",
+   "ws": "Search a word…",
+   "whint": "Tap a word to see what it means.",
+   "wask": "Ask AI-Mae",
+   "wrand": "🎲 Another word",
+   "askWord": "What is {word}?",
+   "gen6": [
+    "What's a browser?",
+    "Where are my downloads?",
+    "Take a screenshot",
+    "What's the terminal?",
+    "Files and folders",
+    "Which computer do I have?"
+   ],
+   "par": [
+    "How can I help with Week 1?",
+    "How can I help with Week 3?",
+    "What is GitHub?",
+    "Our computer is old"
+   ]
+  },
+  "ru": {
+   "help": "Помощь",
+   "words": "Слова",
+   "greetK": "Привет! Я AI-Mae 👋 Я начинающий ИИ-помощник: это моя первая неделя, я тоже учусь.\nПомогаю с заданиями. Если не знаю ответа, отправлю тебя к ментору.\nТвои вопросы помогут команде сделать меня лучше для следующих ребят.\nНа какой ты неделе?",
+   "greetP": "Здравствуйте, я AI-Mae, начинающий ИИ-помощник, это моя первая неделя. Помогаю родителям поддержать их Builder с заданиями. Если я не знаю ответа, попрошу вас написать ментору.",
+   "w1": "Неделя 1",
+   "w3": "Неделя 3",
+   "gen": "Общая помощь",
+   "step": "На каком ты шаге?",
+   "stepW": "Шаг",
+   "os": "У тебя Mac или Windows?",
+   "other": "Chromebook / планшет / телефон",
+   "notSure": "Не знаю",
+   "osHelp": "Легко проверить 👀\nMac: яблоко в левом верхнем углу.\nWindows: кнопка «Пуск» (четыре квадратика) внизу.\nChromebook: кружок внизу слева.",
+   "what": "Напиши, что случилось: что видишь на экране и что пробовал.\nЕсли можешь, добавь скриншот 📷 (только экран, без лиц и имён).",
+   "genQ": "С чем помочь? Выбери или напиши вопрос.",
+   "phK": "Напиши, что случилось…",
+   "phP": "Напишите вопрос…",
+   "fam": "Режим для родителей",
+   "restart": "Заново",
+   "person": "Спросить человека",
+   "wantPerson": "Хочу поговорить с человеком",
+   "sent": "Спроси ментора 💬",
+   "sentD": "Сделай скриншот и напиши ментору в своей группе WhatsApp.",
+   "thinking": "AI-Mae думает…",
+   "checkQ": "Проверяю вопрос…",
+   "checkA": "Проверяю ответ…",
+   "shotT": "Скриншот готов",
+   "remove": "Убрать",
+   "attach": "Добавить скриншот",
+   "ws": "Найти слово…",
+   "whint": "Нажми на слово, чтобы узнать, что оно значит.",
+   "wask": "Спросить AI-Mae",
+   "wrand": "🎲 Другое слово",
+   "askWord": "Что такое {word}?",
+   "gen6": [
+    "Что такое браузер?",
+    "Где мои загрузки?",
+    "Сделать скриншот",
+    "Что такое терминал?",
+    "Файлы и папки",
+    "Какой у меня компьютер?"
+   ],
+   "par": [
+    "Как помочь с неделей 1?",
+    "Как помочь с неделей 3?",
+    "Что такое GitHub?",
+    "У нас старый компьютер"
+   ]
+  },
+  "fr": {
+   "help": "Aide",
+   "words": "Mots",
+   "greetK": "Salut ! Je suis AI-Mae 👋 Je suis une assistante IA débutante : c'est ma première semaine, j'apprends moi aussi.\nJe t'aide avec tes devoirs. Si je ne sais pas, je t'envoie vers ton mentor.\nTes questions aident l'équipe à m'améliorer pour les prochains Builders.\nTu en es à quelle semaine ?",
+   "greetP": "Bonjour, je suis AI-Mae, une assistante IA débutante, c'est ma première semaine. Je vous aide à accompagner votre Builder dans ses devoirs. Si je ne sais pas, je vous demanderai de contacter son mentor.",
+   "w1": "Semaine 1",
+   "w3": "Semaine 3",
+   "gen": "Aide générale",
+   "step": "Tu en es à quelle étape ?",
+   "stepW": "Étape",
+   "os": "Tu es sur Mac ou Windows ?",
+   "other": "Chromebook / tablette / téléphone",
+   "notSure": "Je ne sais pas",
+   "osHelp": "Facile à voir 👀\nMac : une pomme en haut à gauche.\nWindows : un bouton Démarrer (quatre carrés) en bas.\nChromebook : un cercle en bas à gauche.",
+   "what": "Écris ce qui s'est passé : ce que tu vois à l'écran et ce que tu as essayé.\nSi tu peux, ajoute une capture 📷 (juste l'écran, sans visages ni noms).",
+   "genQ": "Je t'aide avec quoi ? Choisis ou écris ta question.",
+   "phK": "Écris ce qui s'est passé…",
+   "phP": "Écrivez votre question…",
+   "fam": "Mode famille",
+   "restart": "Recommencer",
+   "person": "Une personne",
+   "wantPerson": "Je voudrais parler à une personne",
+   "sent": "Demande à ton mentor 💬",
+   "sentD": "Fais une capture d'écran et écris à ton mentor dans ton groupe WhatsApp.",
+   "thinking": "AI-Mae réfléchit…",
+   "checkQ": "Je vérifie ta question…",
+   "checkA": "Je vérifie la réponse…",
+   "shotT": "Capture prête",
+   "remove": "Retirer",
+   "attach": "Ajouter une capture",
+   "ws": "Chercher un mot…",
+   "whint": "Touche un mot pour voir ce qu'il veut dire.",
+   "wask": "Demander à AI-Mae",
+   "wrand": "🎲 Un autre mot",
+   "askWord": "C'est quoi {word} ?",
+   "gen6": [
+    "C'est quoi un navigateur ?",
+    "Où sont mes téléchargements ?",
+    "Faire une capture",
+    "C'est quoi le terminal ?",
+    "Fichiers et dossiers",
+    "Quel ordinateur j'ai ?"
+   ],
+   "par": [
+    "Comment aider pour la semaine 1 ?",
+    "Comment aider pour la semaine 3 ?",
+    "C'est quoi GitHub ?",
+    "Notre ordinateur est vieux"
+   ]
+  },
+  "he": {
+   "help": "עזרה",
+   "words": "מילים",
+   "greetK": "היי! אני AI-Mae 👋 אני עוזרת AI מתחילה: זה השבוע הראשון שלי, וגם אני לומדת.\nאני עוזרת במשימות. אם אני לא יודעת, אשלח אותך למנטור.\nהשאלות שלך עוזרות לצוות לשפר אותי בשביל הבונים הבאים.\nבאיזה שבוע את/ה?",
+   "greetP": "שלום, אני AI-Mae, עוזרת AI מתחילה בשבוע הראשון שלי. אני עוזרת להורים ללוות את ה-Builder שלהם במשימות. אם אני לא יודעת, אבקש מכם לפנות למנטור.",
+   "w1": "שבוע 1",
+   "w3": "שבוע 3",
+   "gen": "עזרה כללית",
+   "step": "באיזה שלב את/ה?",
+   "stepW": "שלב",
+   "os": "Mac או Windows?",
+   "other": "Chromebook / טאבלט / טלפון",
+   "notSure": "לא יודע/ת",
+   "osHelp": "קל לבדוק 👀\nMac: יש תפוח בפינה השמאלית העליונה.\nWindows: כפתור התחל (ארבעה ריבועים) למטה.\nChromebook: עיגול למטה משמאל.",
+   "what": "כתבו מה קרה: מה רואים על המסך ומה ניסיתם.\nאם אפשר, הוסיפו צילום מסך 📷 (רק המסך, בלי פנים או שמות).",
+   "genQ": "במה לעזור? בחרו או כתבו שאלה.",
+   "phK": "כתבו מה קרה…",
+   "phP": "כתבו את השאלה…",
+   "fam": "מצב הורים",
+   "restart": "להתחיל מחדש",
+   "person": "לדבר עם אדם",
+   "wantPerson": "אני רוצה לדבר עם אדם",
+   "sent": "לשאול את המנטור 💬",
+   "sentD": "צלמו את המסך ופנו למנטור בקבוצת הוואטסאפ.",
+   "thinking": "AI-Mae חושבת…",
+   "checkQ": "בודקת את השאלה…",
+   "checkA": "בודקת את התשובה…",
+   "shotT": "צילום המסך מוכן",
+   "remove": "להסיר",
+   "attach": "להוסיף צילום מסך",
+   "ws": "חפשו מילה…",
+   "whint": "לחצו על מילה כדי לראות מה היא אומרת.",
+   "wask": "לשאול את AI-Mae",
+   "wrand": "🎲 מילה אחרת",
+   "askWord": "מה זה {word}?",
+   "gen6": [
+    "מה זה דפדפן?",
+    "איפה ההורדות שלי?",
+    "לצלם מסך",
+    "מה זה טרמינל?",
+    "קבצים ותיקיות",
+    "איזה מחשב יש לי?"
+   ],
+   "par": [
+    "איך לעזור בשבוע 1?",
+    "איך לעזור בשבוע 3?",
+    "מה זה GitHub?",
+    "המחשב שלנו ישן"
+   ]
+  }
+ },
+ "words": [
+  {
+   "term": "Browser",
+   "en": "The app you use to open websites, like Chrome, Safari or Edge. GitHub opens in it.",
+   "es": "La app para abrir páginas web, como Chrome, Safari o Edge. GitHub se abre ahí.",
+   "ru": "Программа, в которой открываются сайты: Chrome, Safari или Edge. GitHub открывается в ней.",
+   "fr": "L'appli pour ouvrir des sites web, comme Chrome, Safari ou Edge. GitHub s'ouvre dedans.",
+   "he": "האפליקציה שבה פותחים אתרים, כמו Chrome, ‏Safari או Edge. ‏GitHub נפתח בה."
+  },
+  {
+   "term": "Address bar",
+   "en": "The long box at the very top of the browser. Type a website address there, like github.com, and press Enter.",
+   "es": "La barra larga arriba del navegador. Escribe ahí la dirección, como github.com, y presiona Enter.",
+   "ru": "Длинная строка в самом верху браузера. Впиши адрес сайта, например github.com, и нажми Enter.",
+   "fr": "La longue barre tout en haut du navigateur. Tape l'adresse du site, comme github.com, puis Entrée.",
+   "he": "השורה הארוכה בראש הדפדפן. כותבים שם כתובת אתר, כמו github.com, ולוחצים Enter."
+  },
+  {
+   "term": "Tab",
+   "en": "Each website open in your browser has a tab along the top. Click one to switch; the small x closes it.",
+   "es": "Cada página abierta tiene una pestaña arriba. Haz clic para cambiar; la x pequeña la cierra.",
+   "ru": "У каждого открытого сайта есть вкладка сверху. Нажми, чтобы переключиться; маленький крестик закрывает её.",
+   "fr": "Chaque site ouvert a un onglet en haut. Clique pour changer ; la petite croix le ferme.",
+   "he": "לכל אתר פתוח יש לשונית למעלה. לוחצים כדי לעבור; ה-x הקטן סוגר אותה."
+  },
+  {
+   "term": "Download",
+   "en": "Copying a file from a website onto your computer. It lands in your Downloads folder.",
+   "es": "Copiar un archivo de una página a tu computadora. Llega a la carpeta Descargas (Downloads).",
+   "ru": "Сохранить файл с сайта на компьютер. Он попадает в папку «Загрузки» (Downloads).",
+   "fr": "Copier un fichier d'un site vers ton ordinateur. Il arrive dans le dossier Téléchargements (Downloads).",
+   "he": "העתקת קובץ מאתר למחשב. הוא מגיע לתיקיית ההורדות (Downloads)."
+  },
+  {
+   "term": "File",
+   "en": "One thing saved on your computer, like a picture or a document. Its name ends with a dot and a few letters: my-idea.md, photo.jpg.",
+   "es": "Una cosa guardada en tu computadora, como una foto o un documento. Su nombre termina con un punto y unas letras: my-idea.md, foto.jpg.",
+   "ru": "Одна сохранённая вещь на компьютере: картинка, документ. Имя кончается точкой и буквами: my-idea.md, photo.jpg.",
+   "fr": "Une chose enregistrée sur ton ordinateur, comme une image ou un document. Son nom finit par un point et quelques lettres : my-idea.md, photo.jpg.",
+   "he": "דבר אחד ששמור במחשב, כמו תמונה או מסמך. השם שלו נגמר בנקודה וכמה אותיות: my-idea.md, ‏photo.jpg."
+  },
+  {
+   "term": "Folder",
+   "en": "A container for files and other folders, like a drawer. Keep your project in Documents → hecho-en-osa.",
+   "es": "Un contenedor de archivos y otras carpetas, como un cajón. Guarda tu proyecto en Documentos → hecho-en-osa.",
+   "ru": "Контейнер для файлов и других папок, как ящик. Храни проект в «Документы» → hecho-en-osa.",
+   "fr": "Un contenant pour fichiers et autres dossiers, comme un tiroir. Range ton projet dans Documents → hecho-en-osa.",
+   "he": "מקום שמחזיק קבצים ותיקיות אחרות, כמו מגירה. שמרו את הפרויקט ב-Documents ← hecho-en-osa."
+  },
+  {
+   "term": "Zip file",
+   "en": "A packed file that ends in .zip. Double-click it to unpack. On Mac, VS Code downloads as a zip.",
+   "es": "Un archivo empacado que termina en .zip. Doble clic para abrirlo. En Mac, VS Code se descarga como zip.",
+   "ru": "Упакованный файл с окончанием .zip. Дважды нажми, чтобы распаковать. На Mac VS Code скачивается как zip.",
+   "fr": "Un fichier compressé qui finit par .zip. Double-clique pour le décompresser. Sur Mac, VS Code se télécharge en zip.",
+   "he": "קובץ ארוז שנגמר ב-.zip. לחיצה כפולה פותחת אותו. ב-Mac, ‏VS Code יורד כקובץ zip."
+  },
+  {
+   "term": "Installer",
+   "en": "A file that puts a new app on your computer. Open it once, follow the steps, then you can delete it.",
+   "es": "Un archivo que instala una app nueva. Ábrelo una vez, sigue los pasos y luego puedes borrarlo.",
+   "ru": "Файл, который устанавливает новую программу. Открой его, пройди шаги, потом его можно удалить.",
+   "fr": "Un fichier qui installe une nouvelle appli. Ouvre-le une fois, suis les étapes, puis tu peux le supprimer.",
+   "he": "קובץ שמתקין אפליקציה חדשה. פותחים אותו פעם אחת, עוקבים אחרי השלבים, ואז אפשר למחוק אותו."
+  },
+  {
+   "term": "Right-click",
+   "en": "Opens a small menu of options. Mac trackpad: click with two fingers. Windows: the right mouse button.",
+   "es": "Abre un menú pequeño. Mac (trackpad): clic con dos dedos. Windows: el botón derecho del ratón.",
+   "ru": "Открывает маленькое меню. Mac (трекпад): нажми двумя пальцами. Windows: правая кнопка мыши.",
+   "fr": "Ouvre un petit menu. Mac (pavé tactile) : clic à deux doigts. Windows : le bouton droit de la souris.",
+   "he": "פותח תפריט קטן. ב-Mac (משטח מגע): לוחצים בשתי אצבעות. ב-Windows: הכפתור הימני בעכבר."
+  },
+  {
+   "term": "Screenshot",
+   "en": "A picture of your screen. Mac: Cmd + Shift + 4. Windows: Windows key + Shift + S. Then drag a box.",
+   "es": "Una foto de tu pantalla. Mac: Cmd + Shift + 4. Windows: tecla Windows + Shift + S. Luego arrastra un cuadro.",
+   "ru": "Снимок экрана. Mac: Cmd + Shift + 4. Windows: клавиша Windows + Shift + S. Потом выдели область.",
+   "fr": "Une photo de ton écran. Mac : Cmd + Maj + 4. Windows : touche Windows + Maj + S. Puis trace un cadre.",
+   "he": "תמונה של המסך. ב-Mac: ‏Cmd + Shift + 4. ב-Windows: מקש Windows + ‏Shift + S. ואז גוררים ריבוע."
+  },
+  {
+   "term": "VS Code",
+   "en": "The app where you write code and text files. Like a notebook that understands code.",
+   "es": "La app donde escribes código y archivos de texto. Como un cuaderno que entiende código.",
+   "ru": "Программа, где пишут код и текстовые файлы. Как тетрадь, которая понимает код.",
+   "fr": "L'appli où tu écris du code et des fichiers texte. Comme un cahier qui comprend le code.",
+   "he": "האפליקציה שבה כותבים קוד וקבצי טקסט. כמו מחברת שמבינה קוד."
+  },
+  {
+   "term": "Terminal",
+   "en": "A window where you type commands instead of clicking. In VS Code: Terminal → New Terminal. It opens at the bottom.",
+   "es": "Una ventana donde escribes comandos en vez de hacer clic. En VS Code: Terminal → New Terminal. Se abre abajo.",
+   "ru": "Окно, где печатаешь команды вместо кликов. В VS Code: Terminal → New Terminal. Оно откроется внизу.",
+   "fr": "Une fenêtre où tu tapes des commandes au lieu de cliquer. Dans VS Code : Terminal → New Terminal. Elle s'ouvre en bas.",
+   "he": "חלון שבו מקלידים פקודות במקום ללחוץ. ב-VS Code: ‏Terminal ← New Terminal. הוא נפתח למטה."
+  },
+  {
+   "term": "Command",
+   "en": "One instruction you type in the terminal, like git --version. Press Enter to run it.",
+   "es": "Una instrucción que escribes en la terminal, como git --version. Presiona Enter para ejecutarla.",
+   "ru": "Одна инструкция, которую печатаешь в терминале, например git --version. Нажми Enter, чтобы выполнить.",
+   "fr": "Une instruction que tu tapes dans le terminal, comme git --version. Appuie sur Entrée pour la lancer.",
+   "he": "הוראה אחת שמקלידים בטרמינל, כמו git --version. לוחצים Enter כדי להריץ."
+  },
+  {
+   "term": "Git",
+   "en": "A time machine for your code. It saves every version so you can go back.",
+   "es": "Una máquina del tiempo para tu código. Guarda cada versión para que puedas volver atrás.",
+   "ru": "Машина времени для кода. Сохраняет каждую версию, чтобы можно было вернуться.",
+   "fr": "Une machine à remonter le temps pour ton code. Elle garde chaque version pour revenir en arrière.",
+   "he": "מכונת זמן לקוד שלך. היא שומרת כל גרסה כדי שאפשר יהיה לחזור אחורה."
+  },
+  {
+   "term": "GitHub",
+   "en": "A website where your code lives online, so others can see it and work with you. You sign in with your handle.",
+   "es": "Una página web donde tu código vive en internet, para que otros lo vean y trabajen contigo. Entras con tu handle.",
+   "ru": "Сайт, где твой код живёт в интернете, чтобы другие видели его и работали с тобой. Входишь под своим ником.",
+   "fr": "Un site où ton code vit en ligne, pour que d'autres le voient et travaillent avec toi. Tu te connectes avec ton pseudo.",
+   "he": "אתר שבו הקוד שלך חי באינטרנט, כדי שאחרים יראו אותו ויעבדו איתך. נכנסים עם שם המשתמש."
+  },
+  {
+   "term": "Handle",
+   "en": "Your name on GitHub. Not your real name: no surname, birth year or school.",
+   "es": "Tu nombre en GitHub. No tu nombre real: sin apellido, año de nacimiento ni escuela.",
+   "ru": "Твоё имя на GitHub. Не настоящее: без фамилии, года рождения и школы.",
+   "fr": "Ton nom sur GitHub. Pas ton vrai nom : pas de nom de famille, d'année de naissance ni d'école.",
+   "he": "השם שלך ב-GitHub. לא השם האמיתי: בלי שם משפחה, שנת לידה או בית ספר."
+  },
+  {
+   "term": "Repository",
+   "en": "A project folder that lives on GitHub. \"Repo\" for short. Yours is github.com/your-handle/hello-osa.",
+   "es": "Una carpeta de proyecto que vive en GitHub. \"Repo\" para abreviar. La tuya: github.com/tu-handle/hello-osa.",
+   "ru": "Папка проекта на GitHub. Коротко — «репо». Твоя: github.com/твой-ник/hello-osa.",
+   "fr": "Un dossier de projet sur GitHub. « Repo » en abrégé. Le tien : github.com/ton-pseudo/hello-osa.",
+   "he": "תיקיית פרויקט שחיה ב-GitHub. בקיצור \"ריפו\". שלך: github.com/your-handle/hello-osa."
+  },
+  {
+   "term": "Commit",
+   "en": "A saved snapshot of your work, with a short message. Like a save point in a game.",
+   "es": "Una foto guardada de tu trabajo, con un mensaje corto. Como un punto de guardado en un juego.",
+   "ru": "Сохранённый снимок твоей работы с коротким сообщением. Как точка сохранения в игре.",
+   "fr": "Une photo enregistrée de ton travail, avec un court message. Comme un point de sauvegarde dans un jeu.",
+   "he": "צילום שמור של העבודה שלך, עם הודעה קצרה. כמו נקודת שמירה במשחק."
+  },
+  {
+   "term": "Push",
+   "en": "Sending your commits from your computer up to GitHub, so they're online.",
+   "es": "Enviar tus commits desde tu computadora a GitHub, para que estén en internet.",
+   "ru": "Отправить коммиты с компьютера на GitHub, чтобы они появились онлайн.",
+   "fr": "Envoyer tes commits de ton ordinateur vers GitHub, pour qu'ils soient en ligne.",
+   "he": "שליחת ה-commits מהמחשב ל-GitHub, כדי שיהיו באינטרנט."
+  }
+ ]
+}
