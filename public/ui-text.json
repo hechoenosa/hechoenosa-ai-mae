@@ -117,7 +117,8 @@
     "¿Qué es GitHub?",
     "Nuestra computadora es vieja"
    ],
-   "back": "← Atrás"
+   "back": "← Atrás",
+   "guides": "Guías"
   },
   "en": {
    "help": "Help",
@@ -172,7 +173,8 @@
     "What is GitHub?",
     "Our computer is old"
    ],
-   "back": "← Back"
+   "back": "← Back",
+   "guides": "Guides"
   },
   "ru": {
    "help": "Помощь",
@@ -227,7 +229,8 @@
     "Что такое GitHub?",
     "У нас старый компьютер"
    ],
-   "back": "← Назад"
+   "back": "← Назад",
+   "guides": "Шпаргалки"
   },
   "fr": {
    "help": "Aide",
@@ -282,7 +285,8 @@
     "C'est quoi GitHub ?",
     "Notre ordinateur est vieux"
    ],
-   "back": "← Retour"
+   "back": "← Retour",
+   "guides": "Guides"
   },
   "he": {
    "help": "עזרה",
@@ -337,7 +341,8 @@
     "מה זה GitHub?",
     "המחשב שלנו ישן"
    ],
-   "back": "→ חזרה"
+   "back": "→ חזרה",
+   "guides": "מדריכים"
   }
  },
  "words": [

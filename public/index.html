@@ -147,6 +147,7 @@ form input[type=text]{flex:1;min-width:0;border:1px solid var(--line);background
 .parents .send{background:var(--sea);color:#fff}
 .send:disabled{opacity:.45;cursor:default}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 16px 12px;font-size:12px;color:var(--muted);white-space:nowrap}
+.foot a{color:inherit;text-underline-offset:2px}
 .foot button{border:0;background:none;color:inherit;cursor:pointer;padding:2px 0;text-decoration:underline;text-underline-offset:2px}
 .foot .fam{text-decoration:none;display:flex;align-items:center;gap:6px}
 .switch{width:28px;height:16px;border-radius:999px;background:var(--line);position:relative;flex:none}
@@ -224,6 +225,7 @@ body{margin:0;min-height:100%}
       <div class="foot">
         <button type="button" class="fam" id="fam" aria-pressed="false"><span class="switch" aria-hidden="true"></span><span id="fam-t"></span></button>
         <button type="button" id="restart"></button>
+        <a id="guides" href="/guides.html" target="_blank" rel="noopener"></a>
         <button type="button" id="human"></button>
       </div>
     </div>

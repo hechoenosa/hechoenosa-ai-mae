@@ -101,7 +101,7 @@ function paint() {
   document.documentElement.lang = lang;
   $("screen").dir = lang === "he" ? "rtl" : "ltr";
   $("v-help").textContent = t("help"); $("v-words").textContent = t("words");
-  $("fam-t").textContent = t("fam"); $("restart").textContent = t("restart"); $("human").textContent = t("person");
+  $("fam-t").textContent = t("fam"); $("restart").textContent = t("restart"); $("human").textContent = t("person"); $("guides").textContent = t("guides");
   $("q").placeholder = mode === "kids" ? t("phK") : t("phP");
   $("attach").setAttribute("aria-label", t("attach")); $("attach").title = t("attach");
   $("shot-t").textContent = t("shotT"); $("shot-x").textContent = t("remove");

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guías · AI-Mae · Hecho en Osa</title>
+<meta name="theme-color" content="#0d6f73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;800&display=swap">
+</head>
+<body>
+<style>
+/* Layout: two one-pager "sheets", each a grid of cards; ES/EN toggle top right. Palette from the mentor handbook. */
+:root{
+  --bg:#f2f0e4; --sheet:#fbfaf3; --ink:#1d2622; --muted:#685d3e; --line:#e2ddc8;
+  --teal:#0d6f73; --gold:#f5d253; --card:#ffffff; --tint:#eef5f3;
+  --font:"Noto Sans", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1413; --sheet:#111a18; --ink:#e7ece4; --muted:#bdb290; --line:#27332f;
+  --teal:#62b6b4; --gold:#f5d253; --card:#17211e; --tint:#14211f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1413; --sheet:#111a18; --ink:#e7ece4; --muted:#bdb290; --line:#27332f;
+  --teal:#62b6b4; --gold:#f5d253; --card:#17211e; --tint:#14211f; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.5 var(--font);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto;padding-block:20px 48px;display:grid;gap:28px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.eyebrow{font:800 11px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.lang{display:flex;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--muted);font:600 12px var(--font);padding:5px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--teal);color:#fff}
+.sheet{background:var(--sheet);border:1px solid var(--line);border-radius:20px;padding:28px clamp(18px,4vw,36px) 32px;display:grid;gap:20px}
+.head{display:grid;gap:6px}
+.head .n{font:800 12px var(--font);color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.head h1{margin:0;font:800 clamp(26px,4vw,38px)/1.08 var(--font);letter-spacing:-.015em;text-wrap:balance}
+.head i{display:block;width:52px;height:3px;background:var(--gold);border-radius:3px;margin-top:4px}
+.head p{margin:2px 0 0;color:var(--muted);max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:8px;align-content:start;min-width:0}
+.card h2{margin:0;font:800 17px/1.2 var(--font);color:var(--teal);display:flex;gap:8px;align-items:baseline}
+.card h2 small{font:600 11px var(--font);color:var(--muted);letter-spacing:.04em}
+.card p{margin:0}
+.card ul,.card ol{margin:0;padding-inline-start:18px;display:grid;gap:3px}
+.ex{background:var(--tint);border-radius:10px;padding:9px 12px;font-size:14px}
+.ex b{color:var(--teal)}
+.chain{display:grid;gap:4px;font-size:14px}
+.chain span{display:block;padding:6px 10px;border-radius:8px;background:var(--tint)}
+.chain span.real{background:var(--gold);color:#1d2622;font-weight:800}
+.wide{grid-column:1/-1}
+.prd{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;counter-reset:p}
+.prd div{border:1.5px dashed var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:2px}
+.prd b{font:800 14px var(--font)}
+.prd span{font-size:13px;color:var(--muted)}
+.no{color:#b3261e}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .no{color:#f28b82}}
+:root[data-theme="dark"] .no{color:#f28b82}
+.foot{font-size:12.5px;color:var(--muted)}
+.backlink{color:var(--teal);font:700 14px var(--font);text-decoration:none}
+body{margin:0}
+@media print{.bar,.backlink{display:none}.sheet{break-after:page;border:0}body{background:#fff}}
+</style>
+
+<div class="wrap">
+  <a class="backlink" href="/">← AI-Mae</a>
+  <div class="bar">
+    <span class="eyebrow">Hecho en Osa · Hackathon + Science Fair 2026</span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="es" aria-pressed="true">Español</button>
+      <button type="button" data-l="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+  <div id="pages"></div>
+</div>
+
+<script>
+const D={
+es:{p1:{n:"Página 1 · Semana 3",t:"Encuentra un problema real y a las personas que lo tienen",s:"Hazlo en papel. Una hoja, todo el proceso."},
+ problem:{t:"El problema",b:`<p>Algo que le hace la vida más difícil a gente real, seguido. No "el mundo necesita una app".</p><p>Escribe: <b>"Mi problema es ___."</b> Revisa 4 cosas:</p><ul><li><b>Real:</b> le pasa a gente real</li><li><b>Importa:</b> ayuda a otros, no solo a mí</li><li><b>Puedo preguntar:</b> conozco a alguien que lo tiene</li><li><b>Pequeño:</b> puedo ayudar antes del Demo Day</li></ul><div class="ex">Ejemplo: <b>basura en la playa</b> ✅✅✅✅</div>`},
+ whys:{t:"Los 5 porqués",b:`<p>El primer problema casi siempre es la superficie. Pregunta "¿Por qué?" y escribe cada respuesta encima de la anterior. Para cuando haga clic, casi siempre en el 3 o el 4.</p><div class="chain"><span class="real">REAL: nadie está a cargo de los basureros</span><span>¿Por qué? Nadie los vacía</span><span>¿Por qué? No hay basureros cerca</span><span>Basura en la playa</span></div>`},
+ persona:{t:"Persona",b:`<p><b>Una</b> persona inventada que tiene tu problema. "Todos" es nadie.</p><ul><li>Nombre, edad, algo que diría</li><li>Qué le frustra</li><li>Qué necesita</li><li>Dónde encontrar a alguien así</li></ul><div class="ex"><b>Rosa, 45</b>, tiene una soda en la playa. "Recojo basura todas las mañanas antes de abrir."</div>`},
+ why:{t:"¿Para qué una persona?",b:`<ul><li>Para no construir para "todo el mundo"</li><li>Cada decisión se vuelve: <b>"¿Rosa usaría esto?"</b></li><li>Te dice a quién entrevistar</li></ul>`},
+ interview:{t:"Entrevistas",b:`<p>Habla con gente como tu persona para aprender de <b>su vida</b>. No para vender tu idea.</p><ol><li>¿Cómo es un día normal para ti?</li><li>¿Qué es lo más difícil de [el problema]?</li><li>Cuéntame la última vez que pasó.</li><li>¿Cómo lo resuelves hoy?</li><li>¿Qué te molesta de eso?</li></ol><p>Luego: <b>"¿Por qué?"</b> o <b>"Cuéntame más."</b></p><p class="no">Nunca: "¿Usarías mi app?" Todos dicen que sí para ser amables.</p><div class="ex"><b>2 personas</b>, 10+ minutos cada una. Anota quién, <b>sus palabras exactas</b> y qué te sorprendió.</div>`},
+ strangers:{t:"Hablar con desconocidos",tag:"con Zamir",b:`<p>Es normal sentir nervios. <b>Hazlo con miedo.</b></p><ul><li>Empieza con gente que tu familia conoce</li><li>Alguien nuevo: con un papá o mamá al lado</li><li>Abre fácil: <i>"Hola, estoy haciendo un proyecto sobre [problema]. ¿Te puedo hacer 3 preguntas rápidas?"</i></li><li>¿Dicen que no? Está bien. Gracias, y al siguiente.</li></ul><div class="ex">Seguridad: lugar público o en casa con familia · solo nombres · pide permiso antes de grabar · nunca a solas con alguien.</div>`},
+ p2:{n:"Página 2 · Semana 3 → 4",t:"Decide qué construir",s:"De todo lo que aprendiste, a una sola cosa que funcione."},
+ fp:{t:"Primeros principios",b:`<p>Divide el problema hasta lo que es <b>verdad</b>, y construye desde ahí. No copies lo que hacen todos.</p><ul><li>¿Qué sabemos seguro?</li><li>¿Qué solo estamos suponiendo?</li></ul><div class="ex">"Necesitamos una app para la basura." Verdad: los basureros se llenan y nadie los vacía. <b>Quizás una lista en la pared de la soda lo resuelve más rápido.</b></div>`},
+ mvp:{t:"MVP",tag:"producto mínimo viable",b:`<p>La versión <b>más pequeña</b> de tu producto que todavía ayuda a tu persona.</p><ul><li>Si tu producto solo pudiera hacer <b>UNA</b> cosa, ¿cuál sería?</li><li>¿Tu frase tiene "y"? Son dos cosas. Elige una.</li><li>Feo y funcionando le gana a bonito y a medias.</li></ul><div class="ex"><b>Sí:</b> "Le recuerda a quien le toca vaciar los basureros."<br><span class="no">No:</span> recuerda <b>y</b> cuenta <b>y</b> da premios <b>y</b> tiene un mapa.</div>`},
+ prd:{t:"PRD",tag:"documento de requisitos del producto",b:`<p>Una página que dice <b>QUÉ</b> construyes y <b>PARA QUIÉN</b>. No el cómo (eso es el TRD, después). Escríbelo con palabras simples: luego será tu primer prompt para la IA.</p>`},
+ parts:[["1 · Nombre del proyecto","Corto y fácil de decir"],["2 · Nuestra idea","En una frase"],["3 · El problema","\"Nuestro problema es…\""],["4 · 5 porqués","Hasta el problema REAL"],["5 · Persona","Nombre, edad, frase, qué necesita"],["6 · Entrevistas","Quién, sus palabras exactas, qué aprendimos"],["7 · Lo único","Nuestro MVP, en una frase"]],
+ foot:"Hecho en Osa · Construyendo el futuro desde el corazón de Costa Rica."},
+en:{p1:{n:"Page 1 · Week 3",t:"Find a real problem and the people who have it",s:"Do it on paper. One sheet, the whole way through."},
+ problem:{t:"The problem",b:`<p>Something that makes life harder for real people, often. Not "the world needs an app".</p><p>Write: <b>"My problem is ___."</b> Check 4 things:</p><ul><li><b>Real:</b> it happens to real people</li><li><b>Matters:</b> it helps others, not just me</li><li><b>We can ask:</b> I know someone who has it</li><li><b>Small:</b> I can help with it before Demo Day</li></ul><div class="ex">Example: <b>trash on the beach</b> ✅✅✅✅</div>`},
+ whys:{t:"The 5 Whys",b:`<p>The first problem is usually the surface. Ask "Why?" and write each answer above the last. Stop when it clicks, usually at Why 3 or 4.</p><div class="chain"><span class="real">REAL: no one is in charge of the bins</span><span>Why? Nobody empties them</span><span>Why? No bins nearby</span><span>Trash on the beach</span></div>`},
+ persona:{t:"Persona",b:`<p><b>One</b> made-up person who has your problem. "Everyone" is no one.</p><ul><li>Name, age, something they'd say</li><li>What frustrates them</li><li>What they need</li><li>Where to find someone like them</li></ul><div class="ex"><b>Rosa, 45</b>, runs a soda by the beach. "I pick up trash every morning before I open."</div>`},
+ why:{t:"Why a persona?",b:`<ul><li>So you don't build for "everybody"</li><li>Every choice becomes: <b>"Would Rosa use this?"</b></li><li>It tells you who to interview</li></ul>`},
+ interview:{t:"Interviews",b:`<p>Talk to people like your persona to learn about <b>their life</b>. Not to sell your idea.</p><ol><li>What does a normal day look like for you?</li><li>What's the hardest part of [the problem]?</li><li>Tell me about the last time it happened.</li><li>How do you handle it today?</li><li>What's annoying about that?</li></ol><p>Then: <b>"Why?"</b> or <b>"Tell me more."</b></p><p class="no">Never: "Would you use my app?" Everyone says yes to be nice.</p><div class="ex"><b>2 people</b>, 10+ minutes each. Write down who, <b>their exact words</b>, and what surprised you.</div>`},
+ strangers:{t:"Talking to strangers",tag:"with Zamir",b:`<p>Feeling nervous is normal. <b>Do it scared.</b></p><ul><li>Start with people your family knows</li><li>Someone new: with a parent next to you</li><li>Open simple: <i>"Hi, I'm working on a project about [problem]. Can I ask you 3 quick questions?"</i></li><li>They say no? That's fine. Thank them, and ask the next person.</li></ul><div class="ex">Safety: in public or at home with family · first names only · ask before recording · never alone with someone.</div>`},
+ p2:{n:"Page 2 · Week 3 → 4",t:"Decide what to build",s:"From everything you learned, to one thing that works."},
+ fp:{t:"First principles",b:`<p>Break the problem down to what is <b>really true</b>, then build up from there. Don't just copy what everyone does.</p><ul><li>What do we know for sure?</li><li>What are we only assuming?</li></ul><div class="ex">"We need an app for the trash." True: the bins fill up and nobody empties them. <b>Maybe a list on the soda's wall solves it faster.</b></div>`},
+ mvp:{t:"MVP",tag:"minimum viable product",b:`<p>The <b>smallest</b> version of your product that still helps your persona.</p><ul><li>If your product could only do <b>ONE</b> thing, what would it be?</li><li>Your sentence has "and"? That's two things. Pick one.</li><li>Ugly and working beats beautiful and half-done.</li></ul><div class="ex"><b>Yes:</b> "It reminds whoever's turn it is to empty the bins."<br><span class="no">No:</span> reminds <b>and</b> counts <b>and</b> gives prizes <b>and</b> has a map.</div>`},
+ prd:{t:"PRD",tag:"product requirements document",b:`<p>One page that says <b>WHAT</b> you're building and <b>FOR WHOM</b>. Not how (that's the TRD, later). Write it in plain words: it becomes your first prompt for AI.</p>`},
+ parts:[["1 · Project name","Short and easy to say"],["2 · Our idea","In one sentence"],["3 · The problem","\"Our problem is…\""],["4 · 5 Whys","Down to the REAL problem"],["5 · Persona","Name, age, a quote, what they need"],["6 · Interviews","Who, their exact words, what we learned"],["7 · The one thing","Our MVP, in one sentence"]],
+ foot:"Hecho en Osa · Building the future from the heart of Costa Rica."}
+};
+let lang="es";try{const l=localStorage.getItem("heo-1p");if(l&&D[l])lang=l}catch{}
+const card=(c,extra="")=>`<section class="card ${extra}"><h2>${c.t}${c.tag?` <small>${c.tag}</small>`:""}</h2>${c.b}</section>`;
+function draw(){
+  const d=D[lang];document.documentElement.lang=lang;
+  const head=h=>`<header class="head"><span class="n">${h.n}</span><h1>${h.t}</h1><i></i><p>${h.s}</p></header>`;
+  document.getElementById("pages").innerHTML=
+   `<div class="sheet">${head(d.p1)}<div class="grid">${card(d.problem)}${card(d.whys)}${card(d.persona)}${card(d.why)}${card(d.interview)}${card(d.strangers)}</div><p class="foot">${d.foot}</p></div>
+    <div class="sheet" style="margin-top:28px">${head(d.p2)}<div class="grid">${card(d.fp)}${card(d.mvp)}${card(d.prd,"wide")}</div>
+    <div class="prd">${d.parts.map(([a,b])=>`<div><b>${a}</b><span>${b}</span></div>`).join("")}</div><p class="foot">${d.foot}</p></div>`;
+  for(const b of document.querySelectorAll(".lang button"))b.setAttribute("aria-pressed",b.dataset.l===lang);
+}
+for(const b of document.querySelectorAll(".lang button"))b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem("heo-1p",lang)}catch{};draw()};
+draw();
+</script>
+
+</body></html>
