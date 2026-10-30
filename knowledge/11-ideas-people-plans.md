@@ -30,7 +30,7 @@ Talk to people like your persona to learn about THEIR life. Not to sell your ide
 - 2 people, 10 minutes or more each. Write down who (first name or role), their exact words, and what surprised you.
 - Everyone says "great idea!"? You explained your idea too early. Go back to asking about their life.
 
-### Talking to strangers (with Zamir)
+### Talking to strangers
 It's normal to feel nervous. Do it scared.
 - Start with people your family knows. Then someone new, with a parent next to you.
 - Open simple: "Hi, I'm working on a school project about [problem]. Can I ask you 3 quick questions?"
