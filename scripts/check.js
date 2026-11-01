@@ -15,6 +15,13 @@ for (const l of langs) {
   for (const k of ["gen6", "par"]) if (!Array.isArray(ui.text[l][k])) problems.push(`ui-text.json: "${l}" → "${k}" must be a list`);
   if (!String(ui.text[l].askWord).includes("{word}")) problems.push(`ui-text.json: "${l}" → "askWord" must contain {word}`);
 }
+// Field kit: every language needs the same pieces as English
+const shape = (o) => Object.entries(o).map(([k, v]) => k + (Array.isArray(v) ? "[" + v.length + "]" : v && typeof v === "object" ? "{" + shape(v) + "}" : "")).sort().join(",");
+for (const l of langs) {
+  if (!ui.kit?.[l]) { problems.push(`ui-text.json: no "${l}" section in "kit"`); continue; }
+  if (shape(ui.kit[l]) !== shape(ui.kit.en)) problems.push(`ui-text.json: kit "${l}" doesn't have the same parts as "en"`);
+  if (!ui.kit[l].ask.includes("{x}")) problems.push(`ui-text.json: kit "${l}" → "ask" must contain {x}`);
+}
 for (const w of ui.words) for (const l of langs) if (!w[l]) problems.push(`ui-text.json: word "${w.term}" has no "${l}" explanation`);
 
 const kb = readdirSync("knowledge").filter((f) => f.endsWith(".md"));

@@ -702,5 +702,532 @@
     ]
    }
   ]
+ },
+ "kit": {
+  "en": {
+   "tab": "Field kit",
+   "title": "Week 3 field kit",
+   "sub": "Pen, paper, a grown-up nearby. Go find the real problem.",
+   "start": "Start an interview",
+   "startSub": "Big cards to read from while you talk",
+   "ask": "Help me with the {x} part of Week 3",
+   "askBtn": "Ask AI-Mae",
+   "turnT": "Your turn",
+   "exT": "Example",
+   "stops": [
+    {
+     "e": "🎯",
+     "t": "The problem",
+     "what": "Something that makes life harder for real people.",
+     "ex": "Trash on the beach.",
+     "turn": "Finish this: \"The problem is ___.\""
+    },
+    {
+     "e": "🪜",
+     "t": "5 Whys",
+     "what": "Ask \"Why?\" until you reach the REAL problem. Usually 3 or 4 times.",
+     "ex": "",
+     "turn": "Ask \"Why?\" about your problem. Then ask it again."
+    },
+    {
+     "e": "👤",
+     "t": "Persona",
+     "what": "ONE made-up person who has your problem. Name, age, one thing they'd say.",
+     "ex": "Rosa, 45, runs a soda. \"I pick up trash every morning.\"",
+     "turn": "Who is your Rosa? Give them a name."
+    },
+    {
+     "e": "🎙️",
+     "t": "Interviews",
+     "what": "Talk to 2 real people like your persona. Ask about THEIR life. Never sell your idea.",
+     "ex": "\"Tell me about the last time it happened.\"",
+     "turn": "Who are 2 people you could ask this week?"
+    },
+    {
+     "e": "1️⃣",
+     "t": "The one thing",
+     "what": "If your build could only do ONE thing, what would it be? Has \"and\"? Pick one.",
+     "ex": "\"It tells whose turn it is to empty the bin.\"",
+     "turn": "Finish this: \"If my build could only do one thing, it would ___.\""
+    }
+   ],
+   "ladder": [
+    "Trash on the beach",
+    "Why? There are no bins",
+    "Why? Nobody empties the bins",
+    "REAL: no one is in charge"
+   ],
+   "why": "Why? ↑",
+   "rulesT": "Field rules",
+   "rules": [
+    "👀 A grown-up you trust is always nearby",
+    "🏖️ Public places or home with family. Never get into a car, van or house",
+    "✋ First names only. No phone numbers, addresses or faces",
+    "🎤 Ask before recording",
+    "🚶 Feel weird? Say thanks, walk away, tell your grown-up"
+   ],
+   "motto": "Do it scared. 💛",
+   "iv": {
+    "close": "Close",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "askIn": "Ask in",
+    "safetyT": "Before you start",
+    "safety": [
+     "A grown-up I trust is nearby",
+     "We're in a public place or at home",
+     "I'll use first names only",
+     "I'll ask before I record"
+    ],
+    "go": "Let's go",
+    "openerT": "Say hi",
+    "opener": "Hi, I'm doing a school project about [your problem]. Can I ask you 3 quick questions?",
+    "qT": "Question",
+    "deeperT": "Dig deeper",
+    "thanksT": "Say thank you",
+    "thanks": "Thank you so much! This really helps.",
+    "afterT": "Write it down now",
+    "after": [
+     "Who: first name or role",
+     "Their exact words, in quotes",
+     "What surprised you"
+    ],
+    "questions": [
+     "Tell me about your week. What does a normal day look like?",
+     "What's the hardest part of [the problem]?",
+     "Tell me about the last time that happened. What did you do?",
+     "How do you handle it today? An app, WhatsApp, paper, asking someone?",
+     "What's annoying about the way you do it now?"
+    ],
+    "deeper": [
+     "Why is that?",
+     "Tell me more",
+     "What happened next?",
+     "When was the last time?"
+    ],
+    "never": "Never ask: \"Would you use my app?\""
+   }
+  },
+  "es": {
+   "tab": "Kit de campo",
+   "title": "Kit de campo · Semana 3",
+   "sub": "Lápiz, papel y un adulto cerca. Sal a encontrar el problema real.",
+   "start": "Empezar una entrevista",
+   "startSub": "Tarjetas grandes para leer mientras hablas",
+   "ask": "Ayúdame con la parte de {x} de la Semana 3",
+   "askBtn": "Pregúntale a AI-Mae",
+   "turnT": "Tu turno",
+   "exT": "Ejemplo",
+   "stops": [
+    {
+     "e": "🎯",
+     "t": "El problema",
+     "what": "Algo que le complica la vida a gente real.",
+     "ex": "Basura en la playa.",
+     "turn": "Completa: \"El problema es ___.\""
+    },
+    {
+     "e": "🪜",
+     "t": "Los 5 porqués",
+     "what": "Pregunta \"¿Por qué?\" hasta llegar al problema REAL. Casi siempre 3 o 4 veces.",
+     "ex": "",
+     "turn": "Pregunta \"¿Por qué?\" sobre tu problema. Y otra vez."
+    },
+    {
+     "e": "👤",
+     "t": "Persona",
+     "what": "UNA persona inventada que tiene tu problema. Nombre, edad, una frase.",
+     "ex": "Rosa, 45, tiene una soda. \"Recojo basura cada mañana.\"",
+     "turn": "¿Quién es tu Rosa? Ponle nombre."
+    },
+    {
+     "e": "🎙️",
+     "t": "Entrevistas",
+     "what": "Habla con 2 personas reales como tu persona. Pregunta por SU vida. No vendas tu idea.",
+     "ex": "\"Cuénteme la última vez que pasó.\"",
+     "turn": "¿A qué 2 personas les puedes preguntar esta semana?"
+    },
+    {
+     "e": "1️⃣",
+     "t": "La única cosa",
+     "what": "Si tu proyecto solo pudiera hacer UNA cosa, ¿cuál sería? ¿Tiene \"y\"? Elige una.",
+     "ex": "\"Avisa a quién le toca vaciar el basurero.\"",
+     "turn": "Completa: \"Si mi proyecto solo hiciera una cosa, sería ___.\""
+    }
+   ],
+   "ladder": [
+    "Basura en la playa",
+    "¿Por qué? No hay basureros",
+    "¿Por qué? Nadie vacía los basureros",
+    "REAL: nadie está a cargo"
+   ],
+   "why": "¿Por qué? ↑",
+   "rulesT": "Reglas de campo",
+   "rules": [
+    "👀 Siempre con un adulto de confianza cerca",
+    "🏖️ Lugares públicos o en casa con la familia. Nunca subas a un carro, van ni casa",
+    "✋ Solo nombres. Sin teléfonos, direcciones ni caras",
+    "🎤 Pide permiso antes de grabar",
+    "🚶 ¿Te sientes raro? Da las gracias, vete y avisa a tu adulto"
+   ],
+   "motto": "Hazlo con miedo. 💛",
+   "iv": {
+    "close": "Cerrar",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "done": "Listo",
+    "askIn": "Preguntar en",
+    "safetyT": "Antes de empezar",
+    "safety": [
+     "Hay un adulto de confianza cerca",
+     "Estamos en un lugar público o en casa",
+     "Usaré solo nombres",
+     "Pediré permiso antes de grabar"
+    ],
+    "go": "¡Vamos!",
+    "openerT": "Saluda",
+    "opener": "Hola, estoy haciendo un proyecto del colegio sobre [tu problema]. ¿Le puedo hacer 3 preguntas rápidas?",
+    "qT": "Pregunta",
+    "deeperT": "Profundiza",
+    "thanksT": "Da las gracias",
+    "thanks": "¡Muchísimas gracias! Me ayuda mucho.",
+    "afterT": "Escríbelo ahora",
+    "after": [
+     "Quién: nombre o lo que hace",
+     "Sus palabras exactas, entre comillas",
+     "Qué te sorprendió"
+    ],
+    "questions": [
+     "Cuénteme de su semana. ¿Cómo es un día normal?",
+     "¿Qué es lo más difícil de [el problema]?",
+     "Cuénteme la última vez que pasó. ¿Qué hizo?",
+     "¿Cómo lo resuelve hoy? ¿Una app, WhatsApp, papel, preguntándole a alguien?",
+     "¿Qué le molesta de cómo lo hace ahora?"
+    ],
+    "deeper": [
+     "¿Por qué?",
+     "¿Me cuenta más?",
+     "¿Y qué pasó después?",
+     "¿Cuándo fue la última vez?"
+    ],
+    "never": "Nunca preguntes: \"¿Usaría mi app?\""
+   }
+  },
+  "ru": {
+   "tab": "В поле",
+   "title": "Полевой набор · Неделя 3",
+   "sub": "Ручка, бумага и взрослый рядом. Иди искать настоящую проблему.",
+   "start": "Начать интервью",
+   "startSub": "Большие карточки, чтобы читать во время разговора",
+   "ask": "Помоги мне с частью «{x}» на Неделе 3",
+   "askBtn": "Спросить AI-Mae",
+   "turnT": "Твоя очередь",
+   "exT": "Пример",
+   "stops": [
+    {
+     "e": "🎯",
+     "t": "Проблема",
+     "what": "То, что усложняет жизнь настоящим людям.",
+     "ex": "Мусор на пляже.",
+     "turn": "Закончи: «Проблема в том, что ___.»"
+    },
+    {
+     "e": "🪜",
+     "t": "5 почему",
+     "what": "Спрашивай «Почему?», пока не дойдёшь до НАСТОЯЩЕЙ проблемы. Обычно 3–4 раза.",
+     "ex": "",
+     "turn": "Спроси «Почему?» про свою проблему. И ещё раз."
+    },
+    {
+     "e": "👤",
+     "t": "Персона",
+     "what": "ОДИН придуманный человек с твоей проблемой. Имя, возраст, одна фраза.",
+     "ex": "Роза, 45, держит кафе. «Каждое утро я собираю мусор.»",
+     "turn": "Кто твоя Роза? Дай ей имя."
+    },
+    {
+     "e": "🎙️",
+     "t": "Интервью",
+     "what": "Поговори с 2 настоящими людьми, похожими на персону. Спрашивай про ИХ жизнь. Не продавай идею.",
+     "ex": "«Расскажите, когда это было в последний раз.»",
+     "turn": "Каких 2 людей ты можешь спросить на этой неделе?"
+    },
+    {
+     "e": "1️⃣",
+     "t": "Одна вещь",
+     "what": "Если бы твой проект мог делать только ОДНО, что бы это было? Есть «и»? Выбери одно.",
+     "ex": "«Показывает, чья очередь выносить мусор.»",
+     "turn": "Закончи: «Если бы мой проект делал только одно, он бы ___.»"
+    }
+   ],
+   "ladder": [
+    "Мусор на пляже",
+    "Почему? Нет урн",
+    "Почему? Никто не опустошает урны",
+    "НАСТОЯЩАЯ: никто не отвечает за это"
+   ],
+   "why": "Почему? ↑",
+   "rulesT": "Правила в поле",
+   "rules": [
+    "👀 Рядом всегда взрослый, которому ты доверяешь",
+    "🏖️ Людные места или дома с семьёй. Никогда не садись в машину и не заходи в чужой дом",
+    "✋ Только имена. Никаких телефонов, адресов и лиц",
+    "🎤 Спроси разрешения перед записью",
+    "🚶 Стало не по себе? Скажи спасибо, уйди и скажи взрослому"
+   ],
+   "motto": "Делай, даже если страшно. 💛",
+   "iv": {
+    "close": "Закрыть",
+    "next": "Дальше",
+    "back": "Назад",
+    "done": "Готово",
+    "askIn": "Спрашивать на",
+    "safetyT": "Перед началом",
+    "safety": [
+     "Рядом взрослый, которому я доверяю",
+     "Мы в людном месте или дома",
+     "Я буду называть только имена",
+     "Я спрошу разрешения перед записью"
+    ],
+    "go": "Поехали",
+    "openerT": "Поздоровайся",
+    "opener": "Здравствуйте, я делаю школьный проект про [твоя проблема]. Можно задать вам 3 коротких вопроса?",
+    "qT": "Вопрос",
+    "deeperT": "Копни глубже",
+    "thanksT": "Скажи спасибо",
+    "thanks": "Большое спасибо! Это очень помогает.",
+    "afterT": "Запиши сразу",
+    "after": [
+     "Кто: имя или чем занимается",
+     "Их точные слова, в кавычках",
+     "Что тебя удивило"
+    ],
+    "questions": [
+     "Расскажите про свою неделю. Какой у вас обычный день?",
+     "Что самое трудное в [проблема]?",
+     "Расскажите, когда это было в последний раз. Что вы сделали?",
+     "Как вы справляетесь с этим сейчас? Приложение, WhatsApp, бумага, кого-то просите?",
+     "Что раздражает в том, как вы делаете это сейчас?"
+    ],
+    "deeper": [
+     "Почему?",
+     "Расскажите подробнее",
+     "А что было потом?",
+     "Когда это было последний раз?"
+    ],
+    "never": "Никогда не спрашивай: «Вы бы пользовались моим приложением?»"
+   }
+  },
+  "fr": {
+   "tab": "Kit terrain",
+   "title": "Kit terrain · Semaine 3",
+   "sub": "Un stylo, du papier, un adulte pas loin. Va trouver le vrai problème.",
+   "start": "Commencer une interview",
+   "startSub": "De grandes cartes à lire pendant que tu parles",
+   "ask": "Aide-moi avec la partie « {x} » de la Semaine 3",
+   "askBtn": "Demander à AI-Mae",
+   "turnT": "À toi",
+   "exT": "Exemple",
+   "stops": [
+    {
+     "e": "🎯",
+     "t": "Le problème",
+     "what": "Quelque chose qui rend la vie plus difficile à de vraies personnes.",
+     "ex": "Des déchets sur la plage.",
+     "turn": "Complète : « Le problème, c'est ___. »"
+    },
+    {
+     "e": "🪜",
+     "t": "Les 5 pourquoi",
+     "what": "Demande « Pourquoi ? » jusqu'au VRAI problème. Souvent 3 ou 4 fois.",
+     "ex": "",
+     "turn": "Demande « Pourquoi ? » sur ton problème. Puis encore."
+    },
+    {
+     "e": "👤",
+     "t": "Persona",
+     "what": "UNE personne inventée qui a ton problème. Prénom, âge, une phrase.",
+     "ex": "Rosa, 45 ans, tient une soda. « Je ramasse les déchets chaque matin. »",
+     "turn": "Qui est ta Rosa ? Donne-lui un prénom."
+    },
+    {
+     "e": "🎙️",
+     "t": "Interviews",
+     "what": "Parle à 2 vraies personnes comme ta persona. Pose des questions sur LEUR vie. Ne vends pas ton idée.",
+     "ex": "« Racontez-moi la dernière fois que c'est arrivé. »",
+     "turn": "Quelles 2 personnes peux-tu interroger cette semaine ?"
+    },
+    {
+     "e": "1️⃣",
+     "t": "La seule chose",
+     "what": "Si ton projet ne pouvait faire qu'UNE chose, ce serait quoi ? Il y a « et » ? Choisis-en une.",
+     "ex": "« Il dit à qui c'est le tour de vider la poubelle. »",
+     "turn": "Complète : « Si mon projet ne faisait qu'une chose, il ___. »"
+    }
+   ],
+   "ladder": [
+    "Des déchets sur la plage",
+    "Pourquoi ? Il n'y a pas de poubelles",
+    "Pourquoi ? Personne ne les vide",
+    "VRAI : personne n'en est responsable"
+   ],
+   "why": "Pourquoi ? ↑",
+   "rulesT": "Règles du terrain",
+   "rules": [
+    "👀 Toujours un adulte de confiance à côté",
+    "🏖️ Lieux publics ou à la maison avec la famille. Ne monte jamais dans une voiture ni chez quelqu'un",
+    "✋ Prénoms seulement. Pas de numéros, d'adresses ni de visages",
+    "🎤 Demande avant d'enregistrer",
+    "🚶 Mal à l'aise ? Dis merci, pars, préviens ton adulte"
+   ],
+   "motto": "Fais-le même si tu as peur. 💛",
+   "iv": {
+    "close": "Fermer",
+    "next": "Suivant",
+    "back": "Retour",
+    "done": "Fini",
+    "askIn": "Demander en",
+    "safetyT": "Avant de commencer",
+    "safety": [
+     "Un adulte de confiance est à côté",
+     "On est dans un lieu public ou à la maison",
+     "Je dirai seulement les prénoms",
+     "Je demanderai avant d'enregistrer"
+    ],
+    "go": "C'est parti",
+    "openerT": "Dis bonjour",
+    "opener": "Bonjour, je fais un projet d'école sur [ton problème]. Je peux vous poser 3 petites questions ?",
+    "qT": "Question",
+    "deeperT": "Creuse",
+    "thanksT": "Dis merci",
+    "thanks": "Merci beaucoup ! Ça m'aide vraiment.",
+    "afterT": "Écris-le tout de suite",
+    "after": [
+     "Qui : prénom ou métier",
+     "Ses mots exacts, entre guillemets",
+     "Ce qui t'a surpris"
+    ],
+    "questions": [
+     "Parlez-moi de votre semaine. À quoi ressemble une journée normale ?",
+     "Qu'est-ce qui est le plus dur avec [le problème] ?",
+     "Racontez-moi la dernière fois que c'est arrivé. Qu'avez-vous fait ?",
+     "Comment vous faites aujourd'hui ? Une appli, WhatsApp, du papier, vous demandez à quelqu'un ?",
+     "Qu'est-ce qui vous embête dans votre façon de faire ?"
+    ],
+    "deeper": [
+     "Pourquoi ?",
+     "Racontez-moi plus",
+     "Et ensuite ?",
+     "C'était quand, la dernière fois ?"
+    ],
+    "never": "Ne demande jamais : « Vous utiliseriez mon appli ? »"
+   }
+  },
+  "he": {
+   "tab": "ערכת שטח",
+   "title": "ערכת שטח · שבוע 3",
+   "sub": "עט, דף ומבוגר קרוב. צאו למצוא את הבעיה האמיתית.",
+   "start": "להתחיל ראיון",
+   "startSub": "כרטיסים גדולים לקרוא מהם תוך כדי שיחה",
+   "ask": "עזרי לי עם החלק של {x} בשבוע 3",
+   "askBtn": "לשאול את AI-Mae",
+   "turnT": "תורכם",
+   "exT": "דוגמה",
+   "stops": [
+    {
+     "e": "🎯",
+     "t": "הבעיה",
+     "what": "משהו שמקשה על החיים של אנשים אמיתיים.",
+     "ex": "זבל על החוף.",
+     "turn": "השלימו: \"הבעיה היא ___.\""
+    },
+    {
+     "e": "🪜",
+     "t": "5 למה",
+     "what": "שאלו \"למה?\" עד שמגיעים לבעיה האמיתית. בדרך כלל 3 או 4 פעמים.",
+     "ex": "",
+     "turn": "שאלו \"למה?\" על הבעיה שלכם. ושוב."
+    },
+    {
+     "e": "👤",
+     "t": "פרסונה",
+     "what": "אדם אחד מומצא שיש לו את הבעיה. שם, גיל, משפט אחד.",
+     "ex": "רוזה, 45, מנהלת מזנון. \"אני אוספת זבל כל בוקר.\"",
+     "turn": "מי הרוזה שלכם? תנו לה שם."
+    },
+    {
+     "e": "🎙️",
+     "t": "ראיונות",
+     "what": "דברו עם 2 אנשים אמיתיים כמו הפרסונה. שאלו על החיים שלהם. אל תמכרו את הרעיון.",
+     "ex": "\"ספרו לי על הפעם האחרונה שזה קרה.\"",
+     "turn": "את מי 2 אתם יכולים לשאול השבוע?"
+    },
+    {
+     "e": "1️⃣",
+     "t": "הדבר האחד",
+     "what": "אם הפרויקט היה יכול לעשות רק דבר אחד, מה זה היה? יש \"ו\"? בחרו אחד.",
+     "ex": "\"הוא אומר של מי התור לרוקן את הפח.\"",
+     "turn": "השלימו: \"אם הפרויקט שלי היה עושה רק דבר אחד, הוא היה ___.\""
+    }
+   ],
+   "ladder": [
+    "זבל על החוף",
+    "למה? אין פחים",
+    "למה? אף אחד לא מרוקן אותם",
+    "האמיתית: אף אחד לא אחראי"
+   ],
+   "why": "למה? ↑",
+   "rulesT": "כללי שטח",
+   "rules": [
+    "👀 תמיד מבוגר שאתם סומכים עליו קרוב",
+    "🏖️ מקומות ציבוריים או בבית עם המשפחה. אף פעם לא להיכנס לרכב או לבית של מישהו",
+    "✋ רק שמות פרטיים. בלי טלפונים, כתובות או פנים",
+    "🎤 לבקש רשות לפני הקלטה",
+    "🚶 מרגישים לא בנוח? תודה, ללכת, לספר למבוגר"
+   ],
+   "motto": "תעשו את זה גם כשמפחיד. 💛",
+   "iv": {
+    "close": "סגירה",
+    "next": "הבא",
+    "back": "חזרה",
+    "done": "סיימתי",
+    "askIn": "לשאול ב",
+    "safetyT": "לפני שמתחילים",
+    "safety": [
+     "מבוגר שאני סומך עליו קרוב",
+     "אנחנו במקום ציבורי או בבית",
+     "אשתמש רק בשמות פרטיים",
+     "אבקש רשות לפני הקלטה"
+    ],
+    "go": "יאללה",
+    "openerT": "להגיד שלום",
+    "opener": "שלום, אני עושה פרויקט לבית הספר על [הבעיה שלכם]. אפשר לשאול 3 שאלות קצרות?",
+    "qT": "שאלה",
+    "deeperT": "לחפור עמוק",
+    "thanksT": "להגיד תודה",
+    "thanks": "תודה רבה! זה ממש עוזר.",
+    "afterT": "לכתוב עכשיו",
+    "after": [
+     "מי: שם פרטי או מה הוא עושה",
+     "המילים המדויקות, במירכאות",
+     "מה הפתיע אתכם"
+    ],
+    "questions": [
+     "ספרו לי על השבוע שלכם. איך נראה יום רגיל?",
+     "מה הכי קשה ב[הבעיה]?",
+     "ספרו לי על הפעם האחרונה שזה קרה. מה עשיתם?",
+     "איך אתם מסתדרים עם זה היום? אפליקציה, וואטסאפ, דף, שואלים מישהו?",
+     "מה מעצבן בדרך שאתם עושים את זה עכשיו?"
+    ],
+    "deeper": [
+     "למה?",
+     "תספרו עוד",
+     "ומה קרה אחר כך?",
+     "מתי זה היה בפעם האחרונה?"
+    ],
+    "never": "אף פעם לא לשאול: \"הייתם משתמשים באפליקציה שלי?\""
+   }
+  }
  }
 }

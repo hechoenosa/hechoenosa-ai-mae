@@ -104,14 +104,14 @@ function greet() {
 function paint() {
   document.documentElement.lang = lang;
   $("screen").dir = lang === "he" ? "rtl" : "ltr";
-  $("v-help-t").textContent = t("help"); $("v-words-t").textContent = t("words");
+  $("v-help-t").textContent = t("help"); $("v-words-t").textContent = t("words"); $("v-kit-t").textContent = UI.kit[lang].tab;
   $("fam-t").textContent = t("fam"); $("restart").textContent = t("restart"); $("human").textContent = t("person"); $("guides").textContent = t("guides");
   $("q").placeholder = mode === "kids" ? t("phK") : t("phP");
   $("attach").setAttribute("aria-label", t("attach")); $("attach").title = t("attach");
   $("shot-t").textContent = t("shotT"); $("shot-x").textContent = t("remove");
   $("ws").placeholder = t("ws"); $("whint").textContent = t("whint"); $("wask").textContent = t("wask"); $("wrand").textContent = t("wrand");
   for (const b of $("langs").children) b.setAttribute("aria-pressed", b.dataset.l === lang);
-  drawWords(); if (word) showWord(word);
+  drawWords(); if (word) showWord(word); drawKit();
 }
 const NAMES = { es: "Español", en: "English", ru: "Русский", fr: "Français", he: "עברית" };
 for (const [code, label] of UI.languages) {
@@ -120,10 +120,9 @@ for (const [code, label] of UI.languages) {
   $("langs").append(b);
 }
 function view(v) {
-  $("p-help").hidden = v !== "help"; $("p-words").hidden = v !== "words";
-  $("v-help").setAttribute("aria-selected", v === "help"); $("v-words").setAttribute("aria-selected", v === "words");
+  for (const k of ["help", "kit", "words"]) { $("p-" + k).hidden = v !== k; $("v-" + k).setAttribute("aria-selected", v === k); }
 }
-$("v-help").onclick = () => view("help"); $("v-words").onclick = () => view("words");
+for (const k of ["help", "kit", "words"]) $("v-" + k).onclick = () => view(k);
 $("fam").onclick = () => { mode = mode === "kids" ? "parents" : "kids"; $("phone").classList.toggle("parents", mode === "parents"); $("fam").setAttribute("aria-pressed", mode === "parents"); paint(); greet(); };
 
 // Words tab
@@ -149,6 +148,82 @@ function showWord(term) {
 $("ws").oninput = drawWords;
 $("wrand").onclick = () => { const o = WORDS.filter((x) => x.term !== word); showWord(o[Math.floor(Math.random() * o.length)].term); };
 $("wask").onclick = () => { if (!word) return; view("help"); ctx = { week: "general", step: null, os: null }; showCtx(); backFn = weekMenu; ask(t("askWord").replace("{word}", $("wterm").textContent)); };
+
+// Field kit tab (Week 3): a trail of the 5 ideas + interview cards to read from in the field
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const STOP_STEP = [3, 3, 3, 4, 5];
+let openStop = -1;
+function drawKit() {
+  const K = UI.kit[lang];
+  $("k-title").textContent = K.title; $("k-sub").textContent = K.sub;
+  $("k-start-t").textContent = K.start; $("k-start-s").textContent = K.startSub;
+  $("k-rules-t").textContent = K.rulesT; $("k-motto").textContent = K.motto;
+  $("k-rules").replaceChildren(...K.rules.map((r) => el("li", null, r)));
+  $("k-trail").replaceChildren(...K.stops.map((st, i) => {
+    const li = el("li"); li.append(el("span", "num", String(i + 1)));
+    const b = el("button", "stop"); b.type = "button"; b.setAttribute("aria-expanded", openStop === i);
+    b.append(el("span", "e", st.e), el("span", null, st.t), el("span", "chev", "›"));
+    b.onclick = () => { openStop = openStop === i ? -1 : i; drawKit(); };
+    li.append(b);
+    if (openStop === i) {
+      const body = el("div", "sbody"); body.append(el("p", null, st.what));
+      if (i === 1) body.append(ladder(K));
+      else { const ex = el("p", "ex"); ex.append(el("span", "lab", K.exT), st.ex); body.append(ex); }
+      const turn = el("p", "turn"); turn.append(el("span", "lab", K.turnT), st.turn); body.append(turn);
+      const go = el("button", "go", K.askBtn); go.type = "button";
+      go.onclick = () => { view("help"); ctx = { week: 3, step: STOP_STEP[i], os: null }; showCtx(); backFn = () => stepMenu(3); ask(K.ask.replace("{x}", st.t)); };
+      body.append(go); li.append(body);
+    }
+    return li;
+  }));
+}
+function ladder(K) {
+  const box = el("div", "ladder"); let n = 1;
+  const btn = el("button", null, K.why); btn.type = "button";
+  const draw = () => {
+    box.replaceChildren(...K.ladder.slice(0, n).map((x, j) => el("span", j === K.ladder.length - 1 ? "real" : null, x)));
+    if (n < K.ladder.length) box.prepend(btn);
+  };
+  btn.onclick = () => { n++; draw(); };
+  draw(); return box;
+}
+$("k-start").onclick = () => { ivLang = lang; ivAt = 0; ivOk = new Set(); $("iv").hidden = false; drawIv(); };
+$("iv-x").onclick = () => { $("iv").hidden = true; };
+
+// Interview mode: safety check → hello → 5 questions → thank you → write it down
+let ivLang = "es", ivAt = 0, ivOk = new Set();
+function drawIv() {
+  const K = UI.kit[ivLang], V = K.iv, ui = UI.kit[lang].iv, total = V.questions.length + 4;
+  $("iv").dir = ivLang === "he" ? "rtl" : "ltr";
+  $("iv-dots").replaceChildren(...Array.from({ length: total }, (_, j) => el("i", j <= ivAt ? "on" : null)));
+  $("iv-lang").replaceChildren(...[...new Set([lang, "es", "en"])].map((l) => {
+    const b = el("button", null, l.toUpperCase()); b.type = "button"; b.setAttribute("aria-pressed", l === ivLang);
+    b.title = ui.askIn + " " + l.toUpperCase(); b.onclick = () => { ivLang = l; drawIv(); }; return b;
+  }));
+  $("iv-x").setAttribute("aria-label", ui.close);
+  const card = $("iv-card"), deeper = $("iv-deeper"); card.replaceChildren(); deeper.replaceChildren();
+  const q = ivAt - 2;
+  if (ivAt === 0) {
+    card.append(el("span", "lab", V.safetyT));
+    V.safety.forEach((s, j) => {
+      const lab = el("label"), c = el("input"); c.type = "checkbox"; c.checked = ivOk.has(j);
+      c.onchange = () => { c.checked ? ivOk.add(j) : ivOk.delete(j); $("iv-next").disabled = ivOk.size < V.safety.length; };
+      lab.append(c, s); card.append(lab);
+    });
+  } else if (ivAt === 1) card.append(el("span", "lab", V.openerT), el("p", "big", V.opener));
+  else if (q < V.questions.length) {
+    card.append(el("span", "lab", V.qT + " " + (q + 1) + " / " + V.questions.length), el("p", "big", V.questions[q]));
+    if (q === 0) card.append(el("p", "never", V.never));
+    deeper.append(el("b", null, V.deeperT), ...V.deeper.map((d) => el("span", null, d)));
+  } else if (ivAt === total - 2) card.append(el("span", "lab", V.thanksT), el("p", "big", V.thanks));
+  else { const ol = el("ol"); ol.append(...V.after.map((a) => el("li", null, a))); card.append(el("span", "lab", V.afterT), ol); }
+  const back = $("iv-back"), next = $("iv-next");
+  back.textContent = ui.back; back.hidden = ivAt === 0;
+  next.textContent = ivAt === 0 ? ui.go : ivAt === total - 1 ? ui.done : ui.next;
+  next.disabled = ivAt === 0 && ivOk.size < V.safety.length;
+}
+$("iv-back").onclick = () => { ivAt = Math.max(0, ivAt - 1); drawIv(); };
+$("iv-next").onclick = () => { const total = UI.kit[ivLang].iv.questions.length + 4; if (ivAt >= total - 1) { $("iv").hidden = true; return; } ivAt++; drawIv(); };
 
 // Screenshots: shrunk on the phone before sending, never stored
 function clearShot() { shot = null; $("shot").hidden = true; $("file").value = ""; }
