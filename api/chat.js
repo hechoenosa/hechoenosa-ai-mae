@@ -50,6 +50,6 @@ export default async function handler(req, res) {
     res.status(200).json({ kind: r.kind, text: r.text, human: r.human, checks: r.checks, user: r.user || null });
   } catch (e) {
     console.error("pipeline error", e?.status || "", e?.message || e);
-    res.status(502).json({ kind: "error", text: pick("error", lang), checks: [[false, "error " + (e?.status || "") + " " + String(e?.message || e).slice(0, 160)]] });
+    res.status(502).json({ kind: "error", text: pick("error", lang) + " (" + (e?.status || "x") + ")", checks: [[false, "error " + (e?.status || "") + " " + String(e?.message || e).slice(0, 160)]] });
   }
 }
