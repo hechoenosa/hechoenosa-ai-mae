@@ -1,43 +1,66 @@
 # Week 3 · Finalize your idea
 
-About 2 hours over the week. No coding. Use one sheet of paper all week; Step 10 copies it into the form.
-Pro builders: meeting the mentor and the Hackathon promise are required (as a comment on their Pro project issue); the exercise is optional; start the PRD and TRD.
+Source: the Week 3 assignment on GitHub (weeks/week-3/assignment.md) and Guides 1 and 2.
+This is the field week. No coding. Pen and paper all week (a notebook or one sheet; a little "field notes" notebook is perfect). Only Step 7 happens on GitHub.
+Where we are: still in Discover, about 3/4 of the way through the first diamond. Define starts in Week 4.
+The due day and Build Hour times are organisation questions: give the organisation reply, never a date or time.
+
+Week 3 page: https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-3/assignment.md
+Guide 1: https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-3/guide-1-find-a-real-problem.md
+Guide 2: https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-3/guide-2-decide-what-to-build.md
+Week 3 form: https://github.com/hechoenosa/zerotohero2026/issues/new?template=week-3.yml
 
 ## Step list
-1 Meet your mentor · 2 Check your problem · 3 Climb the 5 Whys · 4 Make your persona · 5 How might we · 6 Interview questions · 7 Interview 2 people · 8 Decide the one thing · 9 Send your Week 3 form
-There are no Week 3 videos in AI-Mae. If someone asks about videos, explain the step yourself with the one-pager page "Ideas, people and plans".
+1 Watch the videos · 2 Meet your mentor · 3 Find a real problem · 4 Interview 2 people · 5 Decide the one thing · 6 Make your Hackathon promise · 7 Type it in on GitHub (required)
 
-## Step 1 · Meet your mentor
-At a Build Hour, another public place, or a short call with a parent in the room. Tell them your problem, ask one question you're stuck on.
-- Don't know your mentor yet: that's an organisation question, so give the organisation reply.
+## 🌱 Zero to Hero vs 🚀 Pro
+- Zero to Hero: watch all videos, meet your mentor (required), Guides 1 and 2 on paper (required), send the Week 3 form.
+- Pro: meet your mentor (required) and send the Pro weekly update (required). Videos and Guides 1 and 2 are optional, and a good start for the PRD.
 
-## Step 2 · Check your problem
-Write "My problem is ___." Check: Real (happens to real people) · Matters (helps others, not just me) · We can ask (I know someone who has it) · Solvable (I can help with it in the weeks left). A "no"? Make the problem smaller. Example: trash on the beach passes all 4.
+## Step 1 · Watch the videos 🎬
+1. How this week works (4 min): the double diamond, AI is not magic, your steps. https://hechoenosa.github.io/zerotohero2026/weeks/week-3/videos/how-this-week-works.mp4
+2. Zamir · You are your biggest competition (the link is on the Week 3 page).
+3. First principles (2 min): question it, break it down, rebuild. https://hechoenosa.github.io/zerotohero2026/weeks/week-3/videos/first-principles.mp4
+4. What you set up in Week 1, and why (2 min): VS Code, Git, GitHub. https://hechoenosa.github.io/zerotohero2026/weeks/week-3/videos/what-you-set-up-in-week-1.mp4
+- Video won't play: try another browser, or download it and open it. Slow internet: start Steps 3 and 4 on paper and watch later.
 
-## Step 3 · Climb the 5 Whys
-Ask "Why?" and write each answer above the last. Stop when it clicks, usually Why 3 or 4: that's the REAL problem.
-Example: trash on the beach → no bins nearby → nobody empties them → REAL: no one is in charge of the bins.
+## Step 2 · Meet your mentor 🤝
+Their name is in the Builder's Mentor Room (WhatsApp). Set it up together there first. Three ways: at a Build Hour (only if they planned to meet there; there is no open session), a public place you both choose, or online with a parent in the room.
+Tell them your idea, ask one question you're stuck on, share your GitHub handle.
+- Don't know who the mentor is or can't find the Mentor Room: organisation reply.
+- Nervous about meeting: totally normal. Write your one question on paper before you go.
 
-## Step 4 · Make your persona
-ONE person with the problem ("everyone" is no one): made-up name, age, something they'd say; what frustrates them; what they need; where to find someone like them this week.
-Example: Rosa, 45, runs a soda by the beach. "I pick up trash every morning before I open."
+## Step 3 · Find a real problem 🎯 (Guide 1, parts 1–3)
+1. The problem: "The problem is ___." Something that makes life harder for real people.
+2. The 5 Whys: ask "Why?" until you reach the REAL problem. Stop when it clicks, usually Why 3 or 4.
+3. Persona: ONE made-up person with your problem. Name, age, one thing they'd say. Then every idea becomes "Would [persona] use this?"
+Example: trash on the beach → Why? There are no bins → Why? Nobody empties the bins → REAL: no one is in charge. Persona: Rosa, 45, runs a soda. "I pick up trash every morning."
 
-## Step 5 · How might we
-How might we [action] for [persona] so that [what changes]? No apps yet. Example: How might we remind neighbours to empty the bins for Rosa so that the beach is clean when she opens?
+## Step 4 · Interview 2 people 🎙️ (Guide 1, parts 4–5)
+The do-it-scared step. 2 people, 10+ minutes each, people like your persona. Ask about THEIR life. Never "Would you use my app?". Write down who (first name), their exact words, what surprised you.
+Safety: always with an adult nearby · first names only · ask before recording.
+The full how-to is in the page "Field week".
 
-## Step 6 · Interview questions
-1 What does a normal day look like for you? 2 What's the hardest part of [the problem]? 3 Tell me about the last time it happened. 4 How do you handle it today? 5 What's annoying about that? Follow up with "Why?" or "Tell me more." Never ask "Would you use this?"
+## Step 5 · Decide the one thing 1️⃣ (Guide 2)
+Did the interviews change your problem or persona? Update them. Then: "If my build could only do one thing, it would ___." If the sentence has "and", pick one.
+First principles helps: what is true, what are we only guessing? Maybe a list on the wall is enough.
 
-## Step 7 · Interview 2 people
-10+ minutes each, people like the persona. Safety: people you or your family know, or someone new with a parent next to you. First names only. Ask before recording. Write down who, their exact words, what surprised you.
-- Nobody to interview: family counts. Start with people at home.
-- Everyone says "great idea!": you explained your idea too early. Ask only about their life.
+## Step 6 · Make your Hackathon promise 🤞
+"By Demo Day, I promise to ___." Something they control: finish every week's assignment, or block 2 hours every Saturday for the project. Not "win" (they don't control that).
 
-## Step 8 · Decide the one thing
-Update the problem or persona if interviews changed them. "If your product could only do one thing, what would it be?" If the answer has "and", pick one. Example: it reminds whoever's turn it is to empty the bins.
+## Step 7 · Type it in on GitHub 📝 (required)
+Open the Week 3 form → title: their handle after "Week 3: " (like "Week 3: ojochal-builds") → every box matches a step on the paper, and the sentences are already started: fill in the blanks → Create 🎉. Spanish is fine.
+Boxes: watched the videos · met your mentor (Yes / Not yet) · project name (a working name, it can change) · the problem · the 5 Whys · persona · 2 interviews · the one thing · Hackathon promise.
+- Didn't meet the mentor yet: pick "Not yet" and send it anyway.
+- Can't log in or no "Create" button: check they're signed in to GitHub (Week 1 Step 2).
+- Made a mistake after sending: open the issue, click the ··· on their post → Edit.
 
-## Step 9 · Send your Week 3 form (required)
-The form is a GitHub page like the Week 1 "I'm in" form. Its link is coming soon. Until then: keep the answers on your sheet of paper. Title "Week 3: your-handle". Copy in the sheet: problem, 5 Whys, persona, How might we, interviews, the one thing. Bonus: who else has to say yes? Answer "Did you meet your mentor?" Yes/No plus optional feedback. Write the Hackathon promise: "By Demo Day, I promise to ___" (something they control, like finishing every week's assignment or blocking 2 hours every week). Click Create.
+## Done when
+Videos · met mentor · problem, 5 Whys and persona on paper · 2 interviews with real quotes · the one thing · Hackathon promise · Week 3 form sent.
+Mentors read every Week 3 form and look for a real quote, the one thing, a promise, and "Yes" to meeting the mentor.
 
-## Workshop materials (if they missed Emilie's workshop)
-https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-1/ideation-workshop-materials.pdf
+## Worksheets that help (optional)
+Interview questions: https://github.com/hechoenosa/zerotohero2026/blob/main/worksheets/interview-questions.md
+Persona card: https://github.com/hechoenosa/zerotohero2026/blob/main/worksheets/persona-card.md
+Fit check (is the problem worth it? score out of 9): https://github.com/hechoenosa/zerotohero2026/blob/main/worksheets/fit-check.md
+Missed Emilie's workshop: https://github.com/hechoenosa/zerotohero2026/blob/main/weeks/week-1/ideation-workshop-materials.pdf

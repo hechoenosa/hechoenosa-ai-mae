@@ -97,3 +97,9 @@ test("checker says not grounded twice → kind fallback after one rewrite", asyn
 test("Step 2 knowledge covers a Builder with no email", () => {
   assert.match(kb.find((f) => f.name.startsWith("02")).text, /No email yet/);
 });
+test("Week 3 sees the field week guide with safety rules", async () => {
+  const llm = fake({ gate: { area: "week3", lang: "en", problem: "interviews" } });
+  await run(llm, { c: { week: 3, step: 4 } });
+  const sys = llm.calls.answer[0].system;
+  assert.match(sys, /13-field-week/); assert.match(sys, /adult they trust is always nearby/);
+});
