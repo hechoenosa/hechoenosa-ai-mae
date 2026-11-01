@@ -46,10 +46,10 @@ export default async function handler(req, res) {
   if (limited(ip)) return res.status(429).json({ kind: "limit", text: pick("fallback", lang) });
   try {
     const r = await pipeline({ llm: anthropicLLM(), kb: KB, q, image, who, c: ctx, uiLang: lang, history });
-    console.log(JSON.stringify({ kind: r.kind, area: r.gate?.area, lang: r.gate?.lang, problem: r.gate?.problem, image: !!image }));
+    console.log(JSON.stringify({ kind: r.kind, area: r.gate?.area, lang: r.gate?.lang, problem: r.gate?.problem, image: !!image, checks: r.checks?.filter((x) => !x[0] || x[1].includes("blocked")).map((x) => x[1]) }));
     res.status(200).json({ kind: r.kind, text: r.text, human: r.human, checks: r.checks, user: r.user || null });
   } catch (e) {
     console.error("pipeline error", e?.status || "", e?.message || e);
-    res.status(502).json({ kind: "error", text: pick("fallback", lang) });
+    res.status(502).json({ kind: "error", text: pick("error", lang) });
   }
 }

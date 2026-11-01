@@ -7,12 +7,13 @@ import { parseJson } from "../lib/anthropic.js";
 
 const kb = loadKnowledge(join(import.meta.dirname, "..", "knowledge"));
 
-function fake({ gate = { area: "week1", lang: "en", problem: "other" }, answer = "Hey there! Click Settings, then Emails.", check = { on_topic: true, grounded: true, does_their_work: false } } = {}) {
+function fake({ gate = { area: "week1", lang: "en", problem: "other" }, answer = "Hey there! Click Settings, then Emails.", answers, check = { on_topic: true, grounded: true, does_their_work: false }, checks } = {}) {
   const calls = { answer: [] };
+  let j = 0;
   return {
     calls,
-    json: async (prompt) => (prompt.startsWith("Classify") ? gate : check),
-    answer: async (system, messages, opts) => { calls.answer.push({ system, messages, opts }); return answer; },
+    json: async (prompt) => (prompt.startsWith("Classify") ? gate : checks ? checks[Math.min(j++, checks.length - 1)] : check),
+    answer: async (system, messages, opts) => { calls.answer.push({ system, messages, opts }); return answers ? answers[Math.min(calls.answer.length - 1, answers.length - 1)] : answer; },
   };
 }
 const run = (llm, extra = {}) => pipeline({ llm, kb, q: "help", who: "kids", c: { week: 1, step: 3 }, uiLang: "es", history: [], ...extra });
@@ -61,10 +62,10 @@ test("a screenshot goes to the stronger model", async () => {
   await run(llm, { q: "", image: { data: "xx", mediaType: "image/png" } });
   assert.equal(llm.calls.answer[0].opts.tier, "default"); assert.ok(llm.calls.answer[0].opts.image);
 });
-test("text-only uses the fast model", async () => {
+test("text answers also use the stronger model", async () => {
   const llm = fake();
   await run(llm);
-  assert.equal(llm.calls.answer[0].opts.tier, "quick");
+  assert.equal(llm.calls.answer[0].opts.tier, "default");
 });
 test("Week 3 questions only see Week 3 pages", async () => {
   const llm = fake({ gate: { area: "week3", lang: "en", problem: "week3-step" } });
@@ -80,4 +81,19 @@ test("parents get the parent rules", async () => {
 test("JSON is read even with extra words around it", () => {
   assert.deepEqual(parseJson('Sure:\n```json\n{"a":1}\n```'), { a: 1 });
   assert.deepEqual(parseJson('{"a":2} done'), { a: 2 });
+});
+
+test("a blocked first answer gets one rewrite and the rewrite is shown", async () => {
+  const llm = fake({ answers: ["Long answer. ".repeat(120), "Ask a parent to help you make a free email, then go back to github.com/signup."] });
+  const r = await run(llm, { q: "i dont have an email", c: { week: 1, step: 2 } });
+  assert.equal(r.kind, "answer"); assert.equal(llm.calls.answer.length, 2);
+  assert.match(llm.calls.answer[1].messages.at(-1).content, /too long/);
+});
+test("checker says not grounded twice → kind fallback after one rewrite", async () => {
+  const llm = fake({ check: { on_topic: true, grounded: false, does_their_work: false } });
+  const r = await run(llm);
+  assert.equal(r.kind, "fallback"); assert.equal(llm.calls.answer.length, 2);
+});
+test("Step 2 knowledge covers a Builder with no email", () => {
+  assert.match(kb.find((f) => f.name.startsWith("02")).text, /No email yet/);
 });

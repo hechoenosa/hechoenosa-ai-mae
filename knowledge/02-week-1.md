@@ -33,6 +33,9 @@ No surname, birth year or school name. Short, easy to say. Check it's free: open
 github.com/signup → email, password, handle as username → puzzle → code from the email.
 - No code arriving: check spam/promotions, wait 2 minutes, click "Resend". Make sure the email is one they can open.
 - Under 13: a parent signs up with their own email (GitHub requires 13+).
+- No email yet: they need one they can open on this device. Ask a parent to help make a free email account (like Gmail or Outlook), or a parent signs up with their own email. Then go back to github.com/signup.
+- "Email is invalid or already taken": that email already has a GitHub account. Click "Sign in" → "Forgot password?", or use a different email.
+- Puzzle won't load or keeps failing: try another browser (Chrome, Safari, Edge) or turn off the phone's data saver, then try again.
 
 ## Step 3 · Keep your email private (parents can help)
 Profile picture (top right) → Settings → Emails → tick "Keep my email addresses private" and "Block command line pushes that expose my email". Copy the address like 12345678+handle@users.noreply.github.com and save it in Notes. It's needed in Step 6.
